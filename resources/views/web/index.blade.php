@@ -1,941 +1,582 @@
-@extends('web.master')
-@section('mainContent')
-<div class="site-content">
-                <div class="container">
-                    <div class="row">
-                        <!-- Content -->
-                        <div class="content col-lg-8">
-                            <!-- Featured News -->
-                            <div class="card card--clean">
-                                <header class="card__header card__header--has-filter">
-                                    <h4>Featured News</h4>
-                                    <ul class="category-filter category-filter--featured">
-                                        <li class="category-filter__item"><a href="#" class="category-filter__link category-filter__link--reset category-filter__link--active">All</a></li>
-                                        <li class="category-filter__item"><a href="#" class="category-filter__link" data-category="posts__item--category-1">The Team</a></li>
-                                        <li class="category-filter__item"><a href="#" class="category-filter__link" data-category="posts__item--category-3">The League</a></li>
-                                        <li class="category-filter__item"><a href="#" class="category-filter__link" data-category="posts__item--category-2">Injuries</a></li>
-                                    </ul>
-                                </header>
-                                <div class="card__content">
-                                    <!-- Slider -->
-                                    <div class="slick posts posts--slider-featured posts-slider posts-slider--center">
-                                        <div class="posts__item posts__item--category-1">
-                                            <a href="#" class="posts__link-wrapper">
-                                                <figure class="posts__thumb"><img src="web_assets/images/soccer/samples/post-slide7.jpg" alt="" /></figure>
-                                                <div class="posts__inner">
-                                                    <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                    <h3 class="posts__title">The Planettroters will <span class="posts__title-higlight">perform this May 4th</span> at Madison Cube</h3>
-                                                    <div class="post-author">
-                                                        <figure class="post-author__avatar"><img src="web_assets/images/samples/avatar-4.jpg" alt="Post Author Avatar" /></figure>
-                                                        <div class="post-author__info">
-                                                            <h4 class="post-author__name">Jesse Stevens</h4>
-                                                            <time datetime="2017-08-28" class="posts__date">August 28th, 2018</time>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="posts__item posts__item--category-3">
-                                            <a href="#" class="posts__link-wrapper">
-                                                <figure class="posts__thumb"><img src="web_assets/images/samples/post-slide2.jpg" alt="" /></figure>
-                                                <div class="posts__inner">
-                                                    <div class="posts__cat"><span class="label posts__cat-label">The League</span></div>
-                                                    <h3 class="posts__title">New York is preparing all <span class="posts__title-higlight">for the Playoffs Final</span> next December</h3>
-                                                    <div class="post-author">
-                                                        <figure class="post-author__avatar"><img src="web_assets/images/samples/avatar-1.jpg" alt="Post Author Avatar" /></figure>
-                                                        <div class="post-author__info">
-                                                            <h4 class="post-author__name">James Spiegel</h4>
-                                                            <time datetime="2017-08-28" class="posts__date">June 28th, 2018</time>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="posts__item posts__item--category-1">
-                                            <a href="#" class="posts__link-wrapper">
-                                                <figure class="posts__thumb"><img src="web_assets/images/samples/post-slide3.jpg" alt="" /></figure>
-                                                <div class="posts__inner">
-                                                    <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                    <h3 class="posts__title">The new eco friendly <span class="posts__title-higlight">stadium won a Leafy</span> Award in 2016</h3>
-                                                    <div class="post-author">
-                                                        <figure class="post-author__avatar"><img src="web_assets/images/samples/avatar-1.jpg" alt="Post Author Avatar" /></figure>
-                                                        <div class="post-author__info">
-                                                            <h4 class="post-author__name">James Spiegel</h4>
-                                                            <time datetime="2017-08-28" class="posts__date">June 28th, 2018</time>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="posts__item posts__item--category-3">
-                                            <a href="#" class="posts__link-wrapper">
-                                                <figure class="posts__thumb"><img src="web_assets/images/samples/post-slide4.jpg" alt="" /></figure>
-                                                <div class="posts__inner">
-                                                    <div class="posts__cat"><span class="label posts__cat-label">The League</span></div>
-                                                    <h3 class="posts__title">New York Islanders are <span class="posts__title-higlight">now flying to California</span> for the big game</h3>
-                                                    <div class="post-author">
-                                                        <figure class="post-author__avatar"><img src="web_assets/images/samples/avatar-1.jpg" alt="Post Author Avatar" /></figure>
-                                                        <div class="post-author__info">
-                                                            <h4 class="post-author__name">James Spiegel</h4>
-                                                            <time datetime="2017-08-28" class="posts__date">June 28th, 2018</time>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="posts__item posts__item--category-3">
-                                            <a href="#" class="posts__link-wrapper">
-                                                <figure class="posts__thumb"><img src="web_assets/images/samples/post-slide6.jpg" alt="" /></figure>
-                                                <div class="posts__inner">
-                                                    <div class="posts__cat"><span class="label posts__cat-label">The League</span></div>
-                                                    <h3 class="posts__title">Jeremy Rittersen was <span class="posts__title-higlight">called to be</span> in the National Team</h3>
-                                                    <div class="post-author">
-                                                        <figure class="post-author__avatar"><img src="web_assets/images/samples/avatar-2.jpg" alt="Post Author Avatar" /></figure>
-                                                        <div class="post-author__info">
-                                                            <h4 class="post-author__name">Jessica Hoops</h4>
-                                                            <time datetime="2017-08-28" class="posts__date">May 24th, 2018</time>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="posts__item posts__item--category-2">
-                                            <a href="#" class="posts__link-wrapper">
-                                                <figure class="posts__thumb"><img src="web_assets/images/samples/post-slide5.jpg" alt="" /></figure>
-                                                <div class="posts__inner">
-                                                    <div class="posts__cat"><span class="label posts__cat-label">Injuries</span></div>
-                                                    <h3 class="posts__title">Jessica Valentine has a <span class="posts__title-higlight">sprained ankle</span> and won't be in the Final</h3>
-                                                    <div class="post-author">
-                                                        <figure class="post-author__avatar"><img src="web_assets/images/samples/avatar-4.jpg" alt="Post Author Avatar" /></figure>
-                                                        <div class="post-author__info">
-                                                            <h4 class="post-author__name">Jesse Stevens</h4>
-                                                            <time datetime="2017-08-28" class="posts__date">April 12th, 2018</time>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- Slider / End -->
-                                </div>
-                            </div>
-                            <!-- Featured News / End --><!-- Post Area 1 -->
-                            <div class="posts posts--cards post-grid row">
-                                <div class="post-grid__item col-sm-6">
-                                    <div class="posts__item posts__item--card posts__item--category-1 card">
-                                        <figure class="posts__thumb">
-                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                            <a href="#"><img src="web_assets/images/soccer/samples/_soccer_post-img3.jpg" alt="" /></a>
-                                        </figure>
-                                        <div class="posts__inner card__content">
-                                            <a href="#" class="posts__cta"></a> <time datetime="2016-08-23" class="posts__date">August 28th, 2018</time>
-                                            <h6 class="posts__title"><a href="#">Brian Kingster saw the red card after a kick against Jason T.</a></h6>
-                                            <div class="posts__excerpt">
-                                                Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.
-                                            </div>
-                                        </div>
-                                        <footer class="posts__footer card__footer">
-                                            <div class="post-author">
-                                                <figure class="post-author__avatar"><img src="web_assets/images/samples/avatar-1.jpg" alt="Post Author Avatar" /></figure>
-                                                <div class="post-author__info"><h4 class="post-author__name">James Spiegel</h4></div>
-                                            </div>
-                                            <ul class="post__meta meta">
-                                                <li class="meta__item meta__item--views">2369</li>
-                                                <li class="meta__item meta__item--likes">
-                                                    <a href="#"><i class="meta-like icon-heart"></i> 530</a>
-                                                </li>
-                                                <li class="meta__item meta__item--comments"><a href="#">18</a></li>
-                                            </ul>
-                                        </footer>
-                                    </div>
-                                </div>
-                                <div class="post-grid__item col-sm-6">
-                                    <div class="posts__item posts__item--card posts__item--category-1 card">
-                                        <figure class="posts__thumb">
-                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                            <a href="#"><img src="web_assets/images/soccer/samples/_soccer_post-img1.jpg" alt="" /></a>
-                                        </figure>
-                                        <div class="posts__inner card__content">
-                                            <a href="#" class="posts__cta"></a> <time datetime="2016-08-23" class="posts__date">August 28th, 2018</time>
-                                            <h6 class="posts__title"><a href="#">The new eco friendly stadium won a Leafy Award in 2016</a></h6>
-                                            <div class="posts__excerpt">
-                                                Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.
-                                            </div>
-                                        </div>
-                                        <footer class="posts__footer card__footer">
-                                            <div class="post-author">
-                                                <figure class="post-author__avatar"><img src="web_assets/images/samples/avatar-2.jpg" alt="Post Author Avatar" /></figure>
-                                                <div class="post-author__info"><h4 class="post-author__name">Jessica Hoops</h4></div>
-                                            </div>
-                                            <ul class="post__meta meta">
-                                                <li class="meta__item meta__item--views">2369</li>
-                                                <li class="meta__item meta__item--likes">
-                                                    <a href="#"><i class="meta-like icon-heart"></i> 530</a>
-                                                </li>
-                                                <li class="meta__item meta__item--comments"><a href="#">18</a></li>
-                                            </ul>
-                                        </footer>
-                                    </div>
-                                </div>
-                                <div class="post-grid__item col-sm-6">
-                                    <div class="posts__item posts__item--card posts__item--category-1 card">
-                                        <figure class="posts__thumb">
-                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                            <a href="#"><img src="web_assets/images/samples/post-img3.jpg" alt="" /></a>
-                                        </figure>
-                                        <div class="posts__inner card__content">
-                                            <a href="#" class="posts__cta"></a> <time datetime="2016-08-23" class="posts__date">August 28th, 2018</time>
-                                            <h6 class="posts__title"><a href="#">The team is taking a summer vacation on Woody Valley</a></h6>
-                                            <div class="posts__excerpt">
-                                                Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.
-                                            </div>
-                                        </div>
-                                        <footer class="posts__footer card__footer">
-                                            <div class="post-author">
-                                                <figure class="post-author__avatar"><img src="web_assets/images/samples/avatar-2.jpg" alt="Post Author Avatar" /></figure>
-                                                <div class="post-author__info"><h4 class="post-author__name">Jessica Hoops</h4></div>
-                                            </div>
-                                            <ul class="post__meta meta">
-                                                <li class="meta__item meta__item--views">2369</li>
-                                                <li class="meta__item meta__item--likes">
-                                                    <a href="#"><i class="meta-like icon-heart"></i> 530</a>
-                                                </li>
-                                                <li class="meta__item meta__item--comments"><a href="#">18</a></li>
-                                            </ul>
-                                        </footer>
-                                    </div>
-                                </div>
-                                <div class="post-grid__item col-sm-6">
-                                    <div class="posts__item posts__item--card posts__item--category-1 card">
-                                        <figure class="posts__thumb">
-                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                            <a href="#"><img src="web_assets/images/samples/post-img5.jpg" alt="" /></a>
-                                        </figure>
-                                        <div class="posts__inner card__content">
-                                            <a href="#" class="posts__cta"></a> <time datetime="2016-08-23" class="posts__date">August 28th, 2018</time>
-                                            <h6 class="posts__title"><a href="#">The Alchemists team is appearing in L.A. beach for chartiy</a></h6>
-                                            <div class="posts__excerpt">
-                                                Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.
-                                            </div>
-                                        </div>
-                                        <footer class="posts__footer card__footer">
-                                            <div class="post-author">
-                                                <figure class="post-author__avatar"><img src="web_assets/images/samples/avatar-1.jpg" alt="Post Author Avatar" /></figure>
-                                                <div class="post-author__info"><h4 class="post-author__name">James Spiegel</h4></div>
-                                            </div>
-                                            <ul class="post__meta meta">
-                                                <li class="meta__item meta__item--views">2369</li>
-                                                <li class="meta__item meta__item--likes">
-                                                    <a href="#"><i class="meta-like icon-heart"></i> 530</a>
-                                                </li>
-                                                <li class="meta__item meta__item--comments"><a href="#">18</a></li>
-                                            </ul>
-                                        </footer>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Post Area 1 / End --><!-- Post Area 2 -->
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card__content">
-                                            <ul class="posts posts--simple-list">
-                                                <li class="posts__item posts__item--category-1">
-                                                    <figure class="posts__thumb">
-                                                        <a href="#"><img src="web_assets/images/samples/post-img22-xs.jpg" alt="" /></a>
-                                                    </figure>
-                                                    <div class="posts__inner">
-                                                        <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                        <h6 class="posts__title"><a href="#">Brian Kingster was penalized with four games out</a></h6>
-                                                        <time datetime="2016-08-23" class="posts__date">August 28th, 2018</time>
-                                                    </div>
-                                                    <div class="posts__excerpt posts__excerpt--space-sm">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                </li>
-                                                <li class="posts__item posts__item--category-1">
-                                                    <figure class="posts__thumb">
-                                                        <a href="#"><img src="web_assets/images/samples/post-img23-xs.jpg" alt="" /></a>
-                                                    </figure>
-                                                    <div class="posts__inner">
-                                                        <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                        <h6 class="posts__title"><a href="#">The next game will be played at California Beach</a></h6>
-                                                        <time datetime="2016-08-23" class="posts__date">August 28th, 2018</time>
-                                                    </div>
-                                                    <div class="posts__excerpt posts__excerpt--space-sm">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                </li>
-                                                <li class="posts__item posts__item--category-3">
-                                                    <figure class="posts__thumb">
-                                                        <a href="#"><img src="web_assets/images/samples/post-img20-xs.jpg" alt="" /></a>
-                                                    </figure>
-                                                    <div class="posts__inner">
-                                                        <div class="posts__cat"><span class="label posts__cat-label">The League</span></div>
-                                                        <h6 class="posts__title"><a href="#">The Alchemists need two win the next two games</a></h6>
-                                                        <time datetime="2016-08-23" class="posts__date">August 28th, 2018</time>
-                                                    </div>
-                                                    <div class="posts__excerpt posts__excerpt--space-sm">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card__content">
-                                            <ul class="posts posts--simple-list">
-                                                <li class="posts__item posts__item--category-1">
-                                                    <figure class="posts__thumb">
-                                                        <a href="#"><img src="web_assets/images/samples/post-img24-xs.jpg" alt="" /></a>
-                                                    </figure>
-                                                    <div class="posts__inner">
-                                                        <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                        <h6 class="posts__title"><a href="#">he team will make a small vacation to the Caribbean</a></h6>
-                                                        <time datetime="2016-08-23" class="posts__date">August 28th, 2018</time>
-                                                    </div>
-                                                    <div class="posts__excerpt posts__excerpt--space-sm">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                </li>
-                                                <li class="posts__item posts__item--category-2">
-                                                    <figure class="posts__thumb">
-                                                        <a href="#"><img src="web_assets/images/samples/post-img18-xs.jpg" alt="" /></a>
-                                                    </figure>
-                                                    <div class="posts__inner">
-                                                        <div class="posts__cat"><span class="label posts__cat-label">Injuries</span></div>
-                                                        <h6 class="posts__title"><a href="#">Jenny Jackson won&#x27;t be able to play next game</a></h6>
-                                                        <time datetime="2016-08-23" class="posts__date">August 28th, 2018</time>
-                                                    </div>
-                                                    <div class="posts__excerpt posts__excerpt--space-sm">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                </li>
-                                                <li class="posts__item posts__item--category-3">
-                                                    <figure class="posts__thumb">
-                                                        <a href="#"><img src="web_assets/images/samples/post-img4-xs.jpg" alt="" /></a>
-                                                    </figure>
-                                                    <div class="posts__inner">
-                                                        <div class="posts__cat"><span class="label posts__cat-label">The League</span></div>
-                                                        <h6 class="posts__title"><a href="#">The team is starting a new power breakfast regimen</a></h6>
-                                                        <time datetime="2016-08-23" class="posts__date">August 28th, 2018</time>
-                                                    </div>
-                                                    <div class="posts__excerpt posts__excerpt--space-sm">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Post Area 2 / End --><!-- Main News Banner -->
-                            <div class="main-news-banner main-news-banner--soccer-ball">
-                                <div class="main-news-banner__inner">
-                                    <div class="posts posts--simple-list posts--simple-list--xlg">
-                                        <div class="posts__item posts__item--category-1">
-                                            <div class="posts__inner">
-                                                <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                <h6 class="posts__title">
-                                                    <a href="#">Today was unveiled the <span class="main-news-banner__highlight">New Football</span> for the league</a>
-                                                </h6>
-                                                <time datetime="2016-08-23" class="posts__date">August 23rd, 2016</time>
-                                                <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
-                                                <div class="posts__more">
-                                                    <a href="#" class="btn btn-inverse btn-sm btn-outline btn-icon-right btn-condensed">Read More <i class="fa fa-plus text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Main News Banner / End --><!-- Lates News -->
-                            
-                            <!-- Lates News / End --><!-- Post Pagination -->
-                            <nav class="post-pagination" aria-label="Blog navigation">
-                                <ul class="pagination pagination--condensed pagination--lg justify-content-center">
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><span class="page-link">...</span></li>
-                                    <li class="page-item"><a class="page-link" href="#">16</a></li>
-                                </ul>
-                            </nav>
-                            <!-- Post Pagination / End -->
-                        </div>
-                        <!-- Content / End --><!-- Sidebar -->
-                        <div id="sidebar" class="sidebar col-lg-4">
-                            <!-- Widget: Standings -->
-                            <aside class="widget card widget--sidebar widget-standings">
-                                <div class="widget__title card__header card__header--has-btn">
-                                    <h4>West League 2018</h4>
-                                    <a href="#" class="btn btn-default btn-outline btn-xs card-header__button">See All Stats</a>
-                                </div>
-                                <div class="widget__content card__content">
-                                    <div class="table-responsive">
-                                        <table class="table table-hover table-standings">
-                                            <thead>
-                                                <tr>
-                                                    <th>Team Positions</th>
-                                                    <th>W</th>
-                                                    <th>L</th>
-                                                    <th>D</th>
-                                                    <th>PTS</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="team-meta">
-                                                            <figure class="team-meta__logo"><img src="web_assets/images/samples/logos/pirates_shield.png" alt="" /></figure>
-                                                            <div class="team-meta__info">
-                                                                <h6 class="team-meta__name">L.A Pirates</h6>
-                                                                <span class="team-meta__place">Bebop Institute</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>36</td>
-                                                    <td>14</td>
-                                                    <td>10</td>
-                                                    <td>118</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="team-meta">
-                                                            <figure class="team-meta__logo"><img src="web_assets/images/samples/logos/sharks_shield.png" alt="" /></figure>
-                                                            <div class="team-meta__info">
-                                                                <h6 class="team-meta__name">Sharks</h6>
-                                                                <span class="team-meta__place">Marine College</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>32</td>
-                                                    <td>20</td>
-                                                    <td>8</td>
-                                                    <td>104</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="team-meta">
-                                                            <figure class="team-meta__logo"><img src="web_assets/images/samples/logos/alchemists_b_shield.png" alt="" /></figure>
-                                                            <div class="team-meta__info">
-                                                                <h6 class="team-meta__name">The Alchemists</h6>
-                                                                <span class="team-meta__place">Eric Bros School</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>32</td>
-                                                    <td>21</td>
-                                                    <td>7</td>
-                                                    <td>103</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="team-meta">
-                                                            <figure class="team-meta__logo"><img src="web_assets/images/samples/logos/ocean_kings_shield.png" alt="" /></figure>
-                                                            <div class="team-meta__info">
-                                                                <h6 class="team-meta__name">Ocean Kings</h6>
-                                                                <span class="team-meta__place">Bay College</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>30</td>
-                                                    <td>20</td>
-                                                    <td>10</td>
-                                                    <td>100</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="team-meta">
-                                                            <figure class="team-meta__logo"><img src="web_assets/images/samples/logos/red_wings_shield.png" alt="" /></figure>
-                                                            <div class="team-meta__info">
-                                                                <h6 class="team-meta__name">Red Wings</h6>
-                                                                <span class="team-meta__place">Icarus College</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>28</td>
-                                                    <td>24</td>
-                                                    <td>8</td>
-                                                    <td>92</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="team-meta">
-                                                            <figure class="team-meta__logo"><img src="web_assets/images/samples/logos/lucky_clovers_shield.png" alt="" /></figure>
-                                                            <div class="team-meta__info">
-                                                                <h6 class="team-meta__name">Lucky Clovers</h6>
-                                                                <span class="team-meta__place">St. Patrick’s Institute</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>27</td>
-                                                    <td>24</td>
-                                                    <td>9</td>
-                                                    <td>90</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="team-meta">
-                                                            <figure class="team-meta__logo"><img src="web_assets/images/samples/logos/draconians_shield.png" alt="" /></figure>
-                                                            <div class="team-meta__info">
-                                                                <h6 class="team-meta__name">Draconians</h6>
-                                                                <span class="team-meta__place">High Rock College</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>25</td>
-                                                    <td>28</td>
-                                                    <td>7</td>
-                                                    <td>82</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="team-meta">
-                                                            <figure class="team-meta__logo"><img src="web_assets/images/samples/logos/bloody_wave_shield.png" alt="" /></figure>
-                                                            <div class="team-meta__info">
-                                                                <h6 class="team-meta__name">Bloody Wave</h6>
-                                                                <span class="team-meta__place">Atlantic School</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>24</td>
-                                                    <td>30</td>
-                                                    <td>6</td>
-                                                    <td>78</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </aside>
-                            <!-- Widget: Standings / End --><!-- Widget: Social Buttons - Condensed-->
-                            <aside class="widget widget--sidebar widget-social widget-social--condensed">
-                                <a href="#" class="btn-social-counter btn-social-counter--fb" target="_blank">
-                                    <div class="btn-social-counter__icon"><i class="fa fa-facebook"></i></div>
-                                    <h6 class="btn-social-counter__title">Like Our Facebook Page</h6>
-                                    <span class="btn-social-counter__count"><span class="btn-social-counter__count-num"></span> Likes</span> <span class="btn-social-counter__add-icon"></span>
-                                </a>
-                                <a href="#" class="btn-social-counter btn-social-counter--twitter" target="_blank">
-                                    <div class="btn-social-counter__icon"><i class="fa fa-twitter"></i></div>
-                                    <h6 class="btn-social-counter__title">Follow Us on Twitter</h6>
-                                    <span class="btn-social-counter__count"><span class="btn-social-counter__count-num"></span> Followers</span> <span class="btn-social-counter__add-icon"></span>
-                                </a>
-                                <a href="#" class="btn-social-counter btn-social-counter--rss" target="_blank">
-                                    <div class="btn-social-counter__icon"><i class="fa fa-rss"></i></div>
-                                    <h6 class="btn-social-counter__title">Subscribe to Our RSS</h6>
-                                    <span class="btn-social-counter__count"><span class="btn-social-counter__count-num">840</span> Subscribers</span> <span class="btn-social-counter__add-icon"></span>
-                                </a>
-                            </aside>
-                            <!-- Widget: Social Buttons - Condensed / End --><!-- Widget: Popular News -->
-                            <aside class="widget widget--sidebar card widget-popular-posts">
-                                <div class="widget__title card__header"><h4>Popular News</h4></div>
-                                <div class="widget__content card__content">
-                                    <ul class="posts posts--simple-list">
-                                        <li class="posts__item posts__item--category-2">
-                                            <figure class="posts__thumb">
-                                                <a href="#"><img src="web_assets/images/samples/post-img1-xs.jpg" alt="" /></a>
-                                            </figure>
-                                            <div class="posts__inner">
-                                                <div class="posts__cat"><span class="label posts__cat-label">Injuries</span></div>
-                                                <h6 class="posts__title"><a href="#">Mark Johnson has a Tibia Fracture and is gonna be out</a></h6>
-                                                <time datetime="2016-08-23" class="posts__date">August 23rd, 2018</time>
-                                            </div>
-                                        </li>
-                                        <li class="posts__item posts__item--category-1">
-                                            <figure class="posts__thumb">
-                                                <a href="#"><img src="web_assets/images/samples/post-img2-xs.jpg" alt="" /></a>
-                                            </figure>
-                                            <div class="posts__inner">
-                                                <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                <h6 class="posts__title"><a href="#">Jay Rorks is only 24 points away from breaking the record</a></h6>
-                                                <time datetime="2016-08-23" class="posts__date">August 22nd, 2018</time>
-                                            </div>
-                                        </li>
-                                        <li class="posts__item posts__item--category-1">
-                                            <figure class="posts__thumb">
-                                                <a href="#"><img src="web_assets/images/samples/post-img3-xs.jpg" alt="" /></a>
-                                            </figure>
-                                            <div class="posts__inner">
-                                                <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                <h6 class="posts__title"><a href="#">The new eco friendly stadium won a Leafy Award in 2016</a></h6>
-                                                <time datetime="2016-08-23" class="posts__date">June 8th, 2018</time>
-                                            </div>
-                                        </li>
-                                        <li class="posts__item posts__item--category-1">
-                                            <figure class="posts__thumb">
-                                                <a href="#"><img src="web_assets/images/samples/post-img4-xs.jpg" alt="" /></a>
-                                            </figure>
-                                            <div class="posts__inner">
-                                                <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                <h6 class="posts__title"><a href="#">The team is starting a new power breakfast regimen</a></h6>
-                                                <time datetime="2016-08-23" class="posts__date">May 12th, 2018</time>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </aside>
-                            <!-- Widget: Popular News / End --><!-- Widget: Featured Player -->
-                            <aside class="widget card widget--sidebar widget-player widget-player--soccer">
-                                <div class="widget__content card__content">
-                                    <div class="widget-player__ribbon"><div class="fa fa-star"></div></div>
-                                    <figure class="widget-player__photo"><img src="web_assets/images/soccer/samples/_soccer_widget-featured-player.png" alt="" /></figure>
-                                    <header class="widget-player__header clearfix">
-                                        <div class="widget-player__number">07</div>
-                                        <h4 class="widget-player__name"><span class="widget-player__first-name">James</span> <span class="widget-player__last-name">Messinal</span></h4>
-                                    </header>
-                                    <div class="widget-player__content">
-                                        <div class="widget-player__content-inner">
-                                            <div class="widget-player__stat widget-player__goals">
-                                                <div class="widget-player__stat-number">104</div>
-                                                <h6 class="widget-player__stat-label">Goals</h6>
-                                            </div>
-                                            <div class="widget-player__stat widget-player__shots">
-                                                <div class="widget-player__stat-number">129</div>
-                                                <h6 class="widget-player__stat-label">Shots</h6>
-                                            </div>
-                                            <div class="widget-player__stat widget-player__assists">
-                                                <div class="widget-player__stat-number">57</div>
-                                                <h6 class="widget-player__stat-label">Assists</h6>
-                                            </div>
-                                            <div class="widget-player__stat widget-player__games">
-                                                <div class="widget-player__stat-number">86</div>
-                                                <h6 class="widget-player__stat-label">Games</h6>
-                                            </div>
-                                        </div>
-                                        <div class="widget-player__content-alt">
-                                            <!-- Progress: Shot Accuracy -->
-                                            <div class="progress-stats">
-                                                <div class="progress__label">SHOT ACC</div>
-                                                <div class="progress"><div class="progress__bar progress__bar--success progress__bar-width-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
-                                                <div class="progress__number">96%</div>
-                                            </div>
-                                            <!-- Progress: Shot Accuracy / End --><!-- Progress: Pass Accuracy -->
-                                            <div class="progress-stats">
-                                                <div class="progress__label">PASS ACC</div>
-                                                <div class="progress"><div class="progress__bar progress__bar--success progress__bar-width-70" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div>
-                                                <div class="progress__number">74%</div>
-                                            </div>
-                                            <!-- Progress: Pass Accuracy / End -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </aside>
-                            <!-- Widget: Featured Player / End --><!-- Widget: Game Result -->
-                            <aside class="widget card widget--sidebar widget-game-result">
-                                <div class="widget__title card__header card__header--has-btn">
-                                    <h4>Last Game Results</h4>
-                                    <a href="#" class="btn btn-default btn-outline btn-xs card-header__button">Expand Stats</a>
-                                </div>
-                                <div class="widget__content card__content">
-                                    <!-- Game Score -->
-                                    <div class="widget-game-result__section">
-                                        <div class="widget-game-result__section-inner">
-                                            <header class="widget-game-result__header">
-                                                <h3 class="widget-game-result__title">Championship Quarter Finals</h3>
-                                                <time class="widget-game-result__date" datetime="2016-03-24">Saturday, March 24th, 2016</time>
-                                            </header>
-                                            <div class="widget-game-result__main">
-                                                <!-- 1st Team -->
-                                                <div class="widget-game-result__team widget-game-result__team--first">
-                                                    <figure class="widget-game-result__team-logo">
-                                                        <a href="#"><img src="web_assets/images/soccer/logos/alchemists_last_game_results_big.png" alt="" /></a>
-                                                    </figure>
-                                                    <div class="widget-game-result__team-info">
-                                                        <h5 class="widget-game-result__team-name">Alchemists</h5>
-                                                        <div class="widget-game-result__team-desc">Elric Bros School</div>
-                                                    </div>
-                                                </div>
-                                                <!-- 1st Team / End -->
-                                                <div class="widget-game-result__score-wrap">
-                                                    <div class="widget-game-result__score">
-                                                        <span class="widget-game-result__score-result widget-game-result__score-result--winner">2</span> <span class="widget-game-result__score-dash">-</span>
-                                                        <span class="widget-game-result__score-result widget-game-result__score-result--loser">0</span>
-                                                    </div>
-                                                    <div class="widget-game-result__score-label">Final Score</div>
-                                                </div>
-                                                <!-- 2nd Team -->
-                                                <div class="widget-game-result__team widget-game-result__team--second">
-                                                    <figure class="widget-game-result__team-logo">
-                                                        <a href="#"><img src="web_assets/images/samples/logo-l-clovers--sm.png" alt="" /></a>
-                                                    </figure>
-                                                    <div class="widget-game-result__team-info">
-                                                        <h5 class="widget-game-result__team-name">Clovers</h5>
-                                                        <div class="widget-game-result__team-desc">St Paddy's Institute</div>
-                                                    </div>
-                                                </div>
-                                                <!-- 2nd Team / End -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Game Score / End --><!-- Timeline -->
-                                    <div class="widget-game-result__section">
-                                        <div class="df-timeline-wrapper">
-                                            <div class="df-timeline">
-                                                <div class="df-timeline__event df-timeline__event--start">
-                                                    <div class="df-timeline__team-1">
-                                                        <div class="df-timeline__team-shirt"><i class="icon-svg icon-shirt"></i></div>
-                                                    </div>
-                                                    <div class="df-timeline__time">0’</div>
-                                                    <div class="df-timeline__team-2">
-                                                        <div class="df-timeline__team-shirt"><i class="icon-svg icon-shirt-alt"></i></div>
-                                                    </div>
-                                                </div>
-                                                <div class="df-timeline__event df-timeline__event--empty"></div>
-                                                <div class="df-timeline__event">
-                                                    <div class="df-timeline__team-1">
-                                                        <div class="df-timeline__event-info">
-                                                            <div class="df-timeline__event-name">F. Stevens</div>
-                                                            <div class="df-timeline__event-desc">Alchemists 1-0</div>
-                                                        </div>
-                                                        <div class="df-timeline__event-icon"><i class="icon-svg icon-soccer-ball"></i></div>
-                                                    </div>
-                                                    <div class="df-timeline__time">22’</div>
-                                                </div>
-                                                <div class="df-timeline__event">
-                                                    <div class="df-timeline__time">36’</div>
-                                                    <div class="df-timeline__team-2">
-                                                        <div class="df-timeline__event-icon"><i class="icon-svg icon-yellow-card"></i></div>
-                                                        <div class="df-timeline__event-info"><div class="df-timeline__event-name">Johnny Griffin</div></div>
-                                                    </div>
-                                                </div>
-                                                <div class="df-timeline__event df-timeline__event--empty"></div>
-                                                <div class="df-timeline__event">
-                                                    <div class="df-timeline__time">HT</div>
-                                                    <div class="df-timeline__team-2">
-                                                        <div class="df-timeline__event-icon"><i class="icon-svg icon-substitution"></i></div>
-                                                        <div class="df-timeline__event-info">
-                                                            <div class="df-timeline__event-name">Markus Jackson</div>
-                                                            <div class="df-timeline__event-name">Rick Valentine</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="df-timeline__event">
-                                                    <div class="df-timeline__team-1">
-                                                        <div class="df-timeline__event-info"><div class="df-timeline__event-name">Brian Kingster</div></div>
-                                                        <div class="df-timeline__event-icon"><i class="icon-svg icon-red-card"></i></div>
-                                                    </div>
-                                                    <div class="df-timeline__time">59’</div>
-                                                </div>
-                                                <div class="df-timeline__event">
-                                                    <div class="df-timeline__team-1">
-                                                        <div class="df-timeline__event-info">
-                                                            <div class="df-timeline__event-name">Christofer Grass (P)</div>
-                                                            <div class="df-timeline__event-desc">Alchemists 2-0</div>
-                                                        </div>
-                                                        <div class="df-timeline__event-icon"><i class="icon-svg icon-soccer-ball-penalty"></i></div>
-                                                    </div>
-                                                    <div class="df-timeline__time">68’</div>
-                                                </div>
-                                                <div class="df-timeline__event df-timeline__event--empty"></div>
-                                                <div class="df-timeline__event">
-                                                    <div class="df-timeline__time">84’</div>
-                                                    <div class="df-timeline__team-2">
-                                                        <div class="df-timeline__event-icon"><i class="icon-svg icon-yellow-card"></i></div>
-                                                        <div class="df-timeline__event-info"><div class="df-timeline__event-name">Wally Christison</div></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Timeline / End --><!-- Game Statistics -->
-                                    <div class="widget-game-result__section">
-                                        <header class="widget-game-result__subheader card__subheader card__subheader--sm card__subheader--nomargins"><h5 class="widget-game-result__subtitle">Game Statistics</h5></header>
-                                        <div class="widget-game-result__section-inner">
-                                            <!-- Progress: Shots on Goal -->
-                                            <div class="progress-double-wrapper">
-                                                <h6 class="progress-title">Shots on Goal</h6>
-                                                <div class="progress-inner-holder">
-                                                    <div class="progress__digit progress__digit--left progress__digit--40">15</div>
-                                                    <div class="progress__double">
-                                                        <div class="progress"><div class="progress__bar progress__bar-width-60" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div></div>
-                                                        <div class="progress"><div class="progress__bar progress__bar--success progress__bar-width-80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
-                                                    </div>
-                                                    <div class="progress__digit progress__digit--right progress__digit--highlight progress__digit--40">24</div>
-                                                </div>
-                                            </div>
-                                            <!-- Progress: Shots on Goal / End --><!-- Progress: Ball Posession -->
-                                            <div class="progress-double-wrapper">
-                                                <h6 class="progress-title">Ball Posession</h6>
-                                                <div class="progress-inner-holder">
-                                                    <div class="progress__digit progress__digit--left progress__digit--highlight progress__digit--40">75%</div>
-                                                    <div class="progress__double">
-                                                        <div class="progress"><div class="progress__bar progress__bar-width-80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
-                                                        <div class="progress"><div class="progress__bar progress__bar--success progress__bar-width-40" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div></div>
-                                                    </div>
-                                                    <div class="progress__digit progress__digit--right progress__digit--40">35%</div>
-                                                </div>
-                                            </div>
-                                            <!-- Progress: Ball Posession / End --><!-- Progress: Fouls -->
-                                            <div class="progress-double-wrapper">
-                                                <h6 class="progress-title">Fouls</h6>
-                                                <div class="progress-inner-holder">
-                                                    <div class="progress__digit progress__digit--left progress__digit--40">5</div>
-                                                    <div class="progress__double">
-                                                        <div class="progress"><div class="progress__bar progress__bar-width-30" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div></div>
-                                                        <div class="progress"><div class="progress__bar progress__bar--success progress__bar-width-60" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div></div>
-                                                    </div>
-                                                    <div class="progress__digit progress__digit--right progress__digit--highlight progress__digit--40">8</div>
-                                                </div>
-                                            </div>
-                                            <!-- Progress: Fouls / End --><!-- Progress: Corner Kicks -->
-                                            <div class="progress-double-wrapper">
-                                                <h6 class="progress-title">Corner Kicks</h6>
-                                                <div class="progress-inner-holder">
-                                                    <div class="progress__digit progress__digit--left progress__digit--40">10</div>
-                                                    <div class="progress__double">
-                                                        <div class="progress"><div class="progress__bar progress__bar-width-30" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div></div>
-                                                        <div class="progress"><div class="progress__bar progress__bar--success progress__bar-width-80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
-                                                    </div>
-                                                    <div class="progress__digit progress__digit--right progress__digit--highlight progress__digit--40">12</div>
-                                                </div>
-                                            </div>
-                                            <!-- Progress: Corner Kicks / End -->
-                                        </div>
-                                    </div>
-                                    <!-- Game Statistics / End -->
-                                </div>
-                            </aside>
-                            <!-- Widget: Game Result / End --><!-- Widget: Trending News -->
-                            <aside class="widget widget--sidebar card widget-tabbed">
-                                <div class="widget__title card__header"><h4>Top Trending News</h4></div>
-                                <div class="widget__content card__content">
-                                    <div class="widget-tabbed__tabs">
-                                        <!-- Widget Tabs -->
-                                        <ul class="nav nav-tabs nav-justified widget-tabbed__nav" role="tablist">
-                                            <li class="nav-item"><a href="#widget-tabbed-sm-newest" class="nav-link active" aria-controls="widget-tabbed-sm-newest" role="tab" data-toggle="tab">Newest</a></li>
-                                            <li class="nav-item"><a href="#widget-tabbed-sm-commented" class="nav-link" aria-controls="widget-tabbed-sm-commented" role="tab" data-toggle="tab">Most Commented</a></li>
-                                            <li class="nav-item"><a href="#widget-tabbed-sm-popular" class="nav-link" aria-controls="widget-tabbed-sm-popular" role="tab" data-toggle="tab">Popular</a></li>
-                                        </ul>
-                                        <!-- Widget Tab panes -->
-                                        <div class="tab-content widget-tabbed__tab-content">
-                                            <!-- Newest -->
-                                            <div role="tabpanel" class="tab-pane fade show active" id="widget-tabbed-sm-newest">
-                                                <ul class="posts posts--simple-list">
-                                                    <li class="posts__item posts__item--category-1">
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title"><a href="#">Jake Dribbler Announced that he is retiring next month</a></h6>
-                                                            <time datetime="2016-08-23" class="posts__date">August 23rd, 2018</time>
-                                                            <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="posts__item posts__item--category-1">
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title"><a href="#">The Alchemists news coach is bringin a new shooting guard</a></h6>
-                                                            <time datetime="2016-08-23" class="posts__date">August 23rd, 2018</time>
-                                                            <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="posts__item posts__item--category-1">
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title"><a href="#">This Saturday starts the intensive training for the Final</a></h6>
-                                                            <time datetime="2016-08-23" class="posts__date">August 23rd, 2018</time>
-                                                            <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!-- Commented -->
-                                            <div role="tabpanel" class="tab-pane fade" id="widget-tabbed-sm-commented">
-                                                <ul class="posts posts--simple-list">
-                                                    <li class="posts__item posts__item--category-3">
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">Playoffs</span></div>
-                                                            <h6 class="posts__title"><a href="#">New York Islanders are now flying to California for the big game</a></h6>
-                                                            <time datetime="2016-08-23" class="posts__date">August 23rd, 2018</time>
-                                                            <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="posts__item posts__item--category-1">
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title"><a href="#">The Female Division is growing strong after their third game</a></h6>
-                                                            <time datetime="2016-08-23" class="posts__date">August 23rd, 2018</time>
-                                                            <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="posts__item posts__item--category-1">
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title"><a href="#">The Alchemists news coach is bringin a new shooting guard</a></h6>
-                                                            <time datetime="2016-08-23" class="posts__date">August 23rd, 2018</time>
-                                                            <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!-- Popular -->
-                                            <div role="tabpanel" class="tab-pane fade" id="widget-tabbed-sm-popular">
-                                                <ul class="posts posts--simple-list">
-                                                    <li class="posts__item posts__item--category-1">
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title"><a href="#">The Alchemists news coach is bringin a new shooting guard</a></h6>
-                                                            <time datetime="2016-08-23" class="posts__date">August 23rd, 2018</time>
-                                                            <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="posts__item posts__item--category-1">
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title"><a href="#">This Saturday starts the intensive training for the Final</a></h6>
-                                                            <time datetime="2016-08-23" class="posts__date">August 23rd, 2018</time>
-                                                            <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="posts__item posts__item--category-1">
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title"><a href="#">Jake Dribbler Announced that he is retiring next month</a></h6>
-                                                            <time datetime="2016-08-23" class="posts__date">August 23rd, 2018</time>
-                                                            <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </aside>
-                            <!-- Widget: Trending News / End --><!-- Widget: Match Announcement -->
-                            <aside class="widget widget--sidebar card widget-preview">
-                                <div class="widget__title card__header"><h4>Next Match</h4></div>
-                                <div class="widget__content card__content">
-                                    <!-- Match Preview -->
-                                    <div class="match-preview">
-                                        <section class="match-preview__body">
-                                            <header class="match-preview__header">
-                                                <time class="match-preview__date" datetime="2018-08-14">Friday August 14th</time>
-                                                <h3 class="match-preview__title match-preview__title--lg">Quarter Finals</h3>
-                                            </header>
-                                            <div class="match-preview__content">
-                                                <!-- 1st Team -->
-                                                <div class="match-preview__team match-preview__team--first">
-                                                    <figure class="match-preview__team-logo"><img src="web_assets/images/soccer/logos/alchemists_buy_tickets.png" alt="" /></figure>
-                                                    <h5 class="match-preview__team-name">Alchemists</h5>
-                                                    <div class="match-preview__team-info">Elric Bros School</div>
-                                                </div>
-                                                <!-- 1st Team / End -->
-                                                <div class="match-preview__vs">
-                                                    <div class="match-preview__conj">VS</div>
-                                                    <div class="match-preview__match-info">
-                                                        <time class="match-preview__match-time" datetime="2017-08-12 09:00">9:00 PM</time>
-                                                        <div class="match-preview__match-place">Madison Cube Stadium</div>
-                                                    </div>
-                                                </div>
-                                                <!-- 2nd Team -->
-                                                <div class="match-preview__team match-preview__team--second">
-                                                    <figure class="match-preview__team-logo"><img src="web_assets/images/soccer/logos/pirates_buy_tickets.png" alt="" /></figure>
-                                                    <h5 class="match-preview__team-name">Pirates</h5>
-                                                    <div class="match-preview__team-info">Bebop Institute</div>
-                                                </div>
-                                                <!-- 2nd Team / End -->
-                                            </div>
-                                        </section>
-                                        <div class="countdown__content"><div class="countdown-counter" data-date="June 18, 2020 21:00:00"></div></div>
-                                        <div class="match-preview__action match-preview__action--ticket"><a href="#" class="btn btn-primary-inverse btn-lg btn-block">Buy Tickets Now</a></div>
-                                    </div>
-                                    <!-- Match Preview / End -->
-                                </div>
-                            </aside>
-                            <!-- Widget: Match Announcement / End -->
-                        </div>
-                        <!-- Sidebar / End -->
-                    </div>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ @include('web.partials.header_css')
+</head>
+<body>
+  <div class="content-wrapper">
+   @include('web.partials.header')
+    <!-- /.navbar -->
+    <div class="offcanvas-info inverse-text">
+      <button class="plain offcanvas-close offcanvas-info-close"><i class="jam jam-close"></i></button>
+      <a href="index.html"><img src="#" srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="" /></a>
+      <div class="space30"></div>
+      <p>Snowlake is a multi-concept and powerful site template contains rich layouts with possibility of unlimited combinations & beautiful elements.</p>
+      <div class="space20"></div>
+      <div class="widget">
+        <h5 class="widget-title">Contact Info</h5>
+        <address> Moonshine St. 14/05 <br /> Light City, London <div class="space20"></div>
+          <a href="mailto:first.last@email.com" class="nocolor">info@email.com</a><br /> +00 (123) 456 78 90 </address>
+      </div>
+      <!-- /.widget -->
+      <div class="widget">
+        <h3 class="widget-title">Learn More</h3>
+        <ul class="list-unstyled">
+          <li><a href="#" class="nocolor">Our Story</a></li>
+          <li><a href="#" class="nocolor">Terms of Use</a></li>
+          <li><a href="#" class="nocolor">Privacy Policy</a></li>
+          <li><a href="#" class="nocolor">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- /.widget -->
+      <div class="widget">
+        <h3 class="widget-title">Follow Us</h3>
+        <ul class="social social-mute social-s ml-auto">
+          <li><a href="#"><i class="jam jam-twitter"></i></a></li>
+          <li><a href="#"><i class="jam jam-facebook"></i></a></li>
+          <li><a href="#"><i class="jam jam-instagram"></i></a></li>
+          <li><a href="#"><i class="jam jam-vimeo"></i></a></li>
+          <li><a href="#"><i class="jam jam-youtube"></i></a></li>
+        </ul>
+      </div>
+      <!-- /.widget -->
+    </div>
+    <!-- /.offcanvas-info -->
+    <div class="wrapper bg-opacity-default">
+      <div class="rev_slider_wrapper fullwidth-container dark-spinner">
+        <div id="slider7" class="rev_slider fullwidthbanner" data-version="5.4.7">
+          <ul>
+            <li data-transition="fade" data-thumb=""><img src="style/images/dummy.png" style="background:transparent" alt="" />
+              <div class="tp-caption" 
+                   data-x="['center','center','center','center']" 
+                   data-y="['bottom','bottom','bottom','bottom']" 
+                   data-hoffset="['0','0','0','0']" 
+                   data-voffset="['-2','-2','-2','-2']" 
+                   data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+                   data-visibility="['on','on','on','on']" 
+                   data-width="none" 
+                   data-height="none" 
+                   data-type="image" 
+                   data-responsive="on" 
+                   data-responsive_offset="on" 
+                   data-basealign="slide" style="z-index: 5;"><img 
+                   data-lazyload="" src="{{asset('')}}public/web_assets/style/images/art/rocket1.png" 
+                   data-ww="['100%','100%','100%','100%']" 
+                   data-hh="auto" alt="" />           
+              </div>
+              <!-- /.tp-caption -->
+              <div class="tp-caption" 
+                   data-x="['center','center','center','center']" 
+                   data-y="['middle','middle','middle','middle']" 
+                   data-hoffset="['260','260','260','260']" 
+                   data-voffset="['60','60','60','60']" 
+                   data-frames='[{"delay":600,"speed":1200,"frame":"0","from":"y:bottom;rX:90deg;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+                   data-visibility="['on','on','on','off']" 
+                   data-width="none" 
+                   data-height="none" 
+                   data-type="image" 
+                   data-responsive="on" 
+                   data-responsive_offset="on" 
+                   data-basealign="slide" style="z-index: 5;"><img 
+                   data-lazyload="" src="{{asset('')}}public/web_assets/style/images/art/rocket2.png" 
+                   data-ww="['220','220','220','220']" 
+                   data-hh="auto" alt="" />
+              </div>
+              <!-- /.tp-caption -->
+              <div class="tp-caption" 
+                   data-x="['center','center','center','center']" 
+                   data-y="['middle','middle','middle','middle']" 
+                   data-hoffset="['260','260','260','260']" 
+                   data-voffset="['-170','-170','-170','-170']" 
+                   data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+                   data-visibility="['on','on','on','off']" 
+                   data-width="none" 
+                   data-height="none" 
+                   data-type="image" 
+                   data-responsive="on" 
+                   data-responsive_offset="on" 
+                   data-basealign="slide" style="z-index: 6;"><img 
+                   data-lazyload="" src="{{asset('')}}public/web_assets/style/images/art/rocket3.png" 
+                   data-ww="['380','380','380','380']" 
+                   data-hh="auto" alt="" />
+              </div>
+              <!-- /.tp-caption -->
+              <div class="tp-caption" 
+                   data-x="['center','center','center','center']" 
+                   data-y="['middle','middle','middle','middle']" 
+                   data-hoffset="['300','300','300','300']" 
+                   data-voffset="['70','70','70','70']" 
+                   data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+                   data-visibility="['on','on','on','off']" 
+                   data-width="none" 
+                   data-height="none" 
+                   data-type="image" 
+                   data-responsive="on" 
+                   data-responsive_offset="on" 
+                   data-basealign="slide" style="z-index: 5;"><img 
+                   data-lazyload="" src="{{asset('')}}public/web_assets/style/images/art/rocket4.png" 
+                   data-ww="['480','480','480','480']" 
+                   data-hh="auto" alt="" />
+              </div>
+              <!-- /.tp-caption -->
+              <div class="tp-caption font-weight-500 color-dark" 
+                   data-x="['left','left','left','center']" 
+                   data-y="middle" 
+                   data-hoffset="['50','30','30','0']" 
+                   data-voffset="['-125','-125','-125','-105']" 
+                   data-fontsize="['40','40','34','36']" 
+                   data-lineheight="['50','50','44','46']" 
+                   data-width="['500','500','420','340']" 
+                   data-textAlign="['left','left','left','center']" 
+                   data-whitespace="['normal','normal','normal','normal']" 
+                   data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+                   data-responsive="on" 
+                   data-responsive_offset="on" style="z-index: 9;">Grow Your Business with Our Marketing Solutions
+              </div>
+              <!-- /.tp-caption -->
+              <div class="tp-caption font-weight-300 color-dark" 
+                   data-x="['left','left','left','center']" 
+                   data-y="middle" 
+                   data-hoffset="['50','30','30','0']"
+                   data-voffset="['-20','-20','-20','30']" 
+                   data-fontsize="['26','26','22','24']" 
+                   data-lineheight="['36','36','32','34']" 
+                   data-width="['500','500','420','340']" 
+                   data-textAlign="['left','left','left','center']" 
+                   data-whitespace="['normal','normal','normal','normal']" 
+                   data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+                   data-responsive="on" 
+                   data-responsive_offset="on" style="z-index: 9;">We help our clients to increase their website traffic, rankings and visibility in search results.
+              </div>
+              <!-- /.tp-caption -->
+              <a class="tp-caption btn btn-l btn-default" 
+                   data-x="['left','left','left','center']" 
+                   data-y="middle" 
+                   data-hoffset="['50','30','30','0']"
+                   data-voffset="['75','75','75','135']" 
+                   data-width="['auto','auto','auto','auto']" 
+                   data-textAlign="['left','left','left','center']" 
+                   data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+                   data-responsive="on" 
+                   data-responsive_offset="on" style="z-index: 9;" href="#">Try It For Free
+              </a>
+              <!-- /.tp-caption -->
+            </li>
+          </ul>
+          <div class="tp-bannertimer tp-bottom"></div>
+        </div>
+        <!-- /.rev_slider -->
+      </div>
+      <!-- /.rev_slider_wrapper -->
+    </div>
+    <!-- /.wrapper -->
+    <div class="wrapper white-wrapper">
+      <div class="container inner pt-100">
+        <h2 class="title-color color-gray text-center">What We Do?</h2>
+        <h3 class="display-3 text-center">The full service we are offering is specifically <br class="d-none d-lg-block" />designed to meet your business needs.</h3>
+        <div class="space40"></div>
+        <div class="row text-center gutter-60">
+          <div class="col-md-6 col-lg-3">
+            <div class="icon icon-blob icon-blob-rose color-rose mb-20"> <i class="jam jam-search"></i> </div>
+            <h5>SEO Services</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-3">
+            <div class="icon icon-blob icon-blob-blue color-blue mb-20"> <i class="jam jam-layout"></i> </div>
+            <h5>Web Design</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+          </div>
+          <!--/column -->
+          <div class="space30 d-none d-md-block d-lg-none"></div>
+          <div class="col-md-6 col-lg-3">
+            <div class="icon icon-blob icon-blob-green color-green mb-20"> <i class="jam jam-share-alt"></i> </div>
+            <h5>Social Engagement</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-3">
+            <div class="icon icon-blob icon-blob-purple color-purple mb-20"> <i class="jam jam-task-list"></i> </div>
+            <h5>Content Marketing</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+        <div class="space140"></div>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <figure><img src="#" srcset="{{asset('')}}public/web_assets/style/images/concept/concept8.png 1x, {{asset('')}}public/web_assets/style/images/concept/concept8@2x.png 2x" alt="" /></figure>
+          </div>
+          <!--/column -->
+          <div class="space20 d-md-none"></div>
+          <div class="space50 d-none d-md-block d-lg-none"></div>
+          <div class="col-lg-6 pl-60 pl-md-15">
+            <h2 class="title-color color-gray">Why Choose Us?</h2>
+            <h3 class="display-3">Why is Search Engine Optimization important for your business?</h3>
+            <div class="space20"></div>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <ul class="icon-list bullet-default">
+              <li><i class="icofont-verification-check"></i>Aenean eu leo quam ornare.</li>
+              <li><i class="icofont-verification-check"></i>Nullam quis risus eget mollis.</li>
+              <li><i class="icofont-verification-check"></i>Donec elit non mi porta gravida.</li>
+              <li><i class="icofont-verification-check"></i>Fusce dapibus cursus commodo.</li>
+            </ul>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+        <div class="space140"></div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <figure><img src="#" srcset="{{asset('')}}public/web_assets/style/images/concept/concept1.png 1x, {{asset('')}}public/web_assets/style/images/concept/concept1@2x.png 2x" alt="" /></figure>
+          </div>
+          <!--/column -->
+          <div class="space20 d-md-none"></div>
+          <div class="space50 d-none d-md-block d-lg-none"></div>
+          <div class="col-lg-6 pr-60 pr-md-15">
+            <h2 class="title-color color-gray">Our Process</h2>
+            <h3 class="display-3">We bring solutions to make life easier for our customers</h3>
+            <div class="space30"></div>
+            <div class="d-flex flex-row justify-content-center">
+              <div>
+                <span class="icon icon-blob icon-blob-blue color-blue mr-25"><i class="jam jam-lightbulb"></i><span class="step bg-blue">1</span></span>
+              </div>
+              <div>
+                <h5>Collect Ideas</h5>
+                <p class="mb-0">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+              </div>
             </div>
-@endsection
-
+            <div class="space30"></div>
+            <div class="d-flex flex-row justify-content-center">
+              <div>
+                <span class="icon icon-blob icon-blob-teal color-teal mr-25"><i class="jam jam-search-folder"></i><span class="step bg-teal">2</span></span>
+              </div>
+              <div>
+                <h5>Data Analysis</h5>
+                <p class="mb-0">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+              </div>
+            </div>
+            <div class="space30"></div>
+            <div class="d-flex flex-row justify-content-center">
+              <div>
+                <span class="icon icon-blob icon-blob-yellow color-yellow mr-25"><i class="jam jam-heart"></i><span class="step bg-yellow">3</span></span>
+              </div>
+              <div>
+                <h5>Magic Touch</h5>
+                <p class="mb-0">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+        <div class="space140"></div>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <figure><img src="#" srcset="{{asset('')}}public/web_assets/style/images/concept/concept3.png 1x, {{asset('')}}public/web_assets/style/images/concept/concept3@2x.png 2x" alt="" /></figure>
+          </div>
+          <!--/column -->
+          <div class="space20 d-md-none"></div>
+          <div class="space50 d-none d-md-block d-lg-none"></div>
+          <div class="col-lg-6 pl-60 pl-md-15 order-lg-2">
+            <h2 class="title-color color-gray">Our Personalized Solutions</h2>
+            <h3 class="display-3">Just sit and relax while we take care of your business needs</h3>
+            <div class="space20"></div>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <ul class="icon-list bullet-default">
+              <li><i class="icofont-verification-check"></i>Aenean eu leo quam ornare.</li>
+              <li><i class="icofont-verification-check"></i>Nullam quis risus eget mollis.</li>
+              <li><i class="icofont-verification-check"></i>Donec elit non mi porta gravida.</li>
+              <li><i class="icofont-verification-check"></i>Fusce dapibus cursus commodo.</li>
+            </ul>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.wrapper -->
+    <div class="wrapper light-wrapper">
+      <div class="container inner">
+        <h2 class="title-color color-gray text-center mb-30">Customer Stories</h2>
+        <h3 class="display-3 text-center">Customer satisfaction is our major goal. <br class="d-none d-lg-block" />See what our customers are saying about us.</h3>
+        <div class="space20"></div>
+        <div class="grid-view">
+          <div class="carousel owl-carousel gap-small" data-margin="0" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1140":{"items": "3"}}'>
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow">
+                  <blockquote>
+                    <p>"Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula."</p>
+                    <div class="blockquote-details">
+                      <div class="img-blob blob1"><img src="{{asset('')}}public/web_assets/style/images/art/t1.jpg" alt="" /></div>
+                      <div class="info">
+                        <h6 class="mb-0">Connor Gibson</h6>
+                        <span class="meta mb-0">Financial Analyst</span>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.box -->
+              </div>
+              <!-- /.item-inner -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow">
+                  <blockquote>
+                    <p>"Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis."</p>
+                    <div class="blockquote-details">
+                      <div class="img-blob blob1"><img src="{{asset('')}}public/web_assets/style/images/art/t2.jpg" alt="" /></div>
+                      <div class="info">
+                        <h6 class="mb-0">Coriss Ambady</h6>
+                        <span class="meta mb-0">Marketing Specialist</span>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.box -->
+              </div>
+              <!-- /.item-inner -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow">
+                  <blockquote>
+                    <p>"Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam venenatis."</p>
+                    <div class="blockquote-details">
+                      <div class="img-blob blob1"><img src="{{asset('')}}public/web_assets/style/images/art/t3.jpg" alt="" /></div>
+                      <div class="info">
+                        <h6 class="mb-0">Barclay Widerski</h6>
+                        <span class="meta mb-0">Sales Manager</span>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.box -->
+              </div>
+              <!-- /.item-inner -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow">
+                  <blockquote>
+                    <p>"Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus."</p>
+                    <div class="blockquote-details">
+                      <div class="img-blob blob1"><img src="{{asset('')}}public/web_assets/style/images/art/t4.jpg" alt="" /></div>
+                      <div class="info">
+                        <h6 class="mb-0">Nikolas Brooten</h6>
+                        <span class="meta mb-0">Investment Planner</span>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.box -->
+              </div>
+              <!-- /.item-inner -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow">
+                  <blockquote>
+                    <p>"Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus vestibulum."</p>
+                    <div class="blockquote-details">
+                      <div class="img-blob blob1"><img src="{{asset('')}}public/web_assets/style/images/art/t5.jpg" alt="" /></div>
+                      <div class="info">
+                        <h6 class="mb-0">Jackie Sanders</h6>
+                        <span class="meta mb-0">Sales Specialist</span>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.box -->
+              </div>
+              <!-- /.item-inner -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow">
+                  <blockquote>
+                    <p>"Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis."</p>
+                    <div class="blockquote-details">
+                      <div class="img-blob blob1"><img src="{{asset('')}}public/web_assets/style/images/art/t6.jpg" alt="" /></div>
+                      <div class="info">
+                        <h6 class="mb-0">Tina Geller</h6>
+                        <span class="meta mb-0">Financial Analyst</span>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.box -->
+              </div>
+              <!-- /.item-inner -->
+            </div>
+            <!-- /.item -->
+          </div>
+          <!-- /.owl-carousel -->
+        </div>
+        <!-- /.grid-view -->
+        <div class="space160"></div>
+        <div class="row">
+          <div class="col-lg-5 pr-50 pr-md-15">
+            <h2 class="title-color color-gray">Our Pricing</h2>
+            <h3 class="display-3">We offer great prices, premium products and quality service for your business.</h3>
+            <div class="space20"></div>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est.</p>
+          </div>
+          <!--/column -->
+          <div class="space70 d-none d-md-block d-lg-none"></div>
+          <div class="space20 d-md-none"></div>
+          <div class="col-lg-7">
+            <div class="pricing-wrapper">
+              <div class="row no-gutters">
+                <div class="col-md-6 popular">
+                  <div class="pricing panel box bg-white shadow">
+                    <div class="panel-heading">
+                      <div class="prices color-dark">
+                        <div class="price price-show"><span class="price-currency">$</span><span class="price-value">9</span> <span class="price-duration">month</span></div>
+                        <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">99</span> <span class="price-duration">year</span></div>
+                      </div>
+                      <h4 class="panel-title mb-0">Basic Plan</h4>
+                    </div>
+                    <!--/.panel-heading -->
+                    <div class="panel-body">
+                      <table class="table">
+                        <tr>
+                          <td><strong>1</strong> Project </td>
+                        </tr>
+                        <tr>
+                          <td><strong>100K</strong> API Access </td>
+                        </tr>
+                        <tr>
+                          <td><strong>100MB</strong> Storage </td>
+                        </tr>
+                        <tr>
+                          <td> Custom <strong>Cloud</strong> Services </td>
+                        </tr>
+                        <tr>
+                          <td> Weekly <strong>Reports</strong></td>
+                        </tr>
+                        <tr>
+                          <td> 7/24 <strong>Support</strong></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--/.panel-body -->
+                    <div class="panel-footer"> <a href="#" class="btn" role="button">Choose Plan</a></div>
+                  </div>
+                  <!--/.pricing -->
+                </div>
+                <!--/column -->
+                <div class="col-md-6">
+                  <div class="pricing panel box bg-white shadow">
+                    <div class="panel-heading">
+                      <div class="prices color-dark">
+                        <div class="price price-show"><span class="price-currency">$</span><span class="price-value">19</span> <span class="price-duration">month</span></div>
+                        <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">199</span> <span class="price-duration">year</span></div>
+                      </div>
+                      <h4 class="panel-title mb-0">Premium Plan</h4>
+                    </div>
+                    <!--/.panel-heading -->
+                    <div class="panel-body">
+                      <table class="table">
+                        <tr>
+                          <td><strong>5</strong> Projects </td>
+                        </tr>
+                        <tr>
+                          <td><strong>100K</strong> API Access </td>
+                        </tr>
+                        <tr>
+                          <td><strong>200MB</strong> Storage </td>
+                        </tr>
+                        <tr>
+                          <td> Custom <strong>Cloud</strong> Services </td>
+                        </tr>
+                        <tr>
+                          <td> Weekly <strong>Reports</strong></td>
+                        </tr>
+                        <tr>
+                          <td> 7/24 <strong>Support</strong></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--/.panel-body -->
+                    <div class="panel-footer"> <a href="#" class="btn" role="button">Choose Plan</a></div>
+                  </div>
+                  <!--/.pricing -->
+                </div>
+                <!--/column -->
+              </div>
+              <!--/.row -->
+            </div>
+            <!--/.pricing-wrapper -->
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+        <div class="space140"></div>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <figure><img src="#" srcset="{{asset('')}}public/web_assets/style/images/concept/concept12.png 1x, {{asset('')}}public/web_assets/style/images/concept/concept12@2x.png 2x" alt="" /></figure>
+          </div>
+          <!--/column -->
+          <div class="space50 d-none d-md-block d-lg-none"></div>
+          <div class="space10 d-md-none"></div>
+          <div class="col-lg-6 pl-60 pl-md-15">
+            <h2 class="title-color color-gray">Let's Talk</h2>
+            <h3 class="display-3">Let's make something great together. If you got any questions, don't hesitate to get in touch with us.</h3>
+            <div class="space20"></div>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <div class="space10"></div>
+            <a href="#" class="btn btn-default">Contact Us</a>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.wrapper -->
+    <div class="wrapper bg-opacity-default">
+      <div class="container inner">
+        <div class="row text-center">
+          <div class="col-lg-8 offset-lg-2">
+            <h2 class="title-color color-gray">Analyze Now</h2>
+            <h3 class="display-3">Wonder how much faster your website can go?<br class="d-none d-xl-block" /> Easily check your SEO Score now.</h3>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <div class="space30"></div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <form class="fields-white">
+              <div class="input-group">
+                <input type="email" value="" name="EMAIL" class="email form-control mb-0 mr-2 mb-sm-0" placeholder="Email Address" required>
+                <button type="submit" class="btn btn-rounded btn-default mr-0 mb-0 pull-right">Analyze</button>
+              </div>
+            </form>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+      <figure style="margin-bottom:-3px;"><img src="style/images/art/rocket1.png" alt="" /></figure>
+    </div>
+    <!-- /.wrapper -->
+    @include('web.partials.footer')
+   
+  </div>
+  @include('web.partials.header_js')
+  <!-- /.content-wrapper -->
+  
+</body>
+</html>

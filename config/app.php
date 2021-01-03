@@ -149,7 +149,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
-        Clickatell\ClickatellServiceProvider::class,
+   
         RobinCSamuel\LaravelMsg91\LaravelMsg91ServiceProvider::class,  
         Unicodeveloper\Paystack\PaystackServiceProvider::class, 
         /*
@@ -219,7 +219,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Excel' => 'Maatwebsite\Excel\Facades\Excel',
         'PDF' => Barryvdh\DomPDF\Facade::class,
-        'Clickatell' => Clickatell\ClickatellFacade::class,
+      
         'LaravelMsg91' => RobinCSamuel\LaravelMsg91\Facades\LaravelMsg91::class,
         'Carbon' => 'Carbon\Carbon',
         'Calendar' => MaddHatter\LaravelFullcalendar\Facades\Calendar::class,

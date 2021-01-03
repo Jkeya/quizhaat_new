@@ -1,656 +1,1038 @@
+
 <!DOCTYPE html>
-<html lang="zxx">
-    <head>
-        <!-- Basic Page Needs
-    ================================================== -->
-        <title>Quizhaat - A  quiz company</title>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="Sports Club, League and News HTML Template" />
-        <meta name="author" content="Dan Fisher" />
-        <meta name="keywords" content="sports club news HTML template" />
-        <!-- Favicons
-    ================================================== -->
-        <link rel="shortcut icon" href="web_assets/images/soccer/favicons/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="120x120" href="web_assets/images/soccer/favicons/favicon-120.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="web_assets/images/soccer/favicons/favicon-152.png" />
-        <!-- Mobile Specific Metas
-    ================================================== -->
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
-        <!-- Google Web Fonts
-    ================================================== -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CSource+Sans+Pro:400,700" rel="stylesheet" />
-        <!-- CSS
-    ================================================== -->
-        <!-- Vendor CSS -->
-        <link href="{{asset('public/web_assets/css/bootstrap.css')}}" rel="stylesheet" />
-        <link href="{{asset('public/web_assets/css/all.min.css')}}" rel="stylesheet" />
-        <link href="{{asset('public/web_assets/css/v4-shims.min.css')}}" rel="stylesheet" />
-        <link href="{{asset('public/web_assets/css/simple-line-icons.css')}}" rel="stylesheet" />
-        <link href="{{asset('public/web_assets/css/magnific-popup.css')}}" rel="stylesheet" />
-        <link href="{{asset('public/web_assets/css/slick.css')}}" rel="stylesheet" />
-        <link href="{{asset('public/web_assets/css/style-soccer.css')}}" rel="stylesheet" />
-        <link href="{{asset('public/web_assets/css/custom.css')}}" rel="stylesheet" />
-        <style type="text/css">
-            .header-logo a{
-                color: #FFFFFF !important;
-                font-size: 25px;
-                font-weight: bold;
-            }
-        </style>
-    </head>
-
-    <body data-template="template-soccer">
-        <div class="site-wrapper clearfix">
-            <div class="site-overlay"></div>
-            <!-- Header
-        ================================================== --><!-- Header Mobile -->
-            <div class="header-mobile clearfix" id="header-mobile">
-                <div class="header-mobile__logo">
-                    <a href="_soccer_index.html"><img src="{{asset('web_assets/images/main_logo.png')}}" srcset="web_assets/images/soccer/logo@2x.png 2x" alt="Alchemists" class="header-mobile__logo-img" /></a>
-                </div>
-                <div class="header-mobile__inner">
-                    <a id="header-mobile__toggle" class="burger-menu-icon"><span class="burger-menu-icon__line"></span></a> <span class="header-mobile__search-icon" id="header-mobile__search-icon"></span>
-                </div>
-            </div>
-            <!-- Header Desktop -->
-            <header class="header header--layout-1">
-            
-                <!-- Header Top Bar / End --><!-- Header Secondary -->
-            
-                <!-- Header Secondary / End --><!-- Header Primary -->
-                <div class="header__primary">
-                    <div class="container">
-                        <div class="header__primary-inner">
-                            <!-- Header Logo -->
-                            <div class="header-logo">
-                                <a href="#"><!-- <img src="{{asset('public/web_assets/images/main_logo.png')}}" srcset="web_assets/images/soccer/logo@2x.png 2x" alt="Alchemists" class="header-logo__img" /> -->
-                                    QUIZHAAT
-                                </a>
-                            </div>
-                            <!-- Header Logo / End --><!-- Main Navigation -->
-                            <nav class="main-nav clearfix">
-                                <ul class="main-nav__list">
-                                    <li class="active"><a href="_soccer_index.html">Home</a></li>
-                                    <li class="">
-                                        <a href="#">Features</a>
-                                        <div class="main-nav__megamenu clearfix">
-                                            <ul class="col-lg-2 col-md-3 col-12 main-nav__ul">
-                                                <li class="main-nav__title">Features</li>
-                                                <li><a href="_soccer_features-shortcodes.html">Shortcodes</a></li>
-                                                <li><a href="_soccer_features-typography.html">Typography</a></li>
-                                                <li><a href="_soccer_features-widgets-blog.html">Widgets - Blog</a></li>
-                                                <li><a href="_soccer_features-widgets-shop.html">Widgets - Shop</a></li>
-                                                <li><a href="_soccer_features-widgets-sports.html">Widgets - Sports</a></li>
-                                                <li><a href="_soccer_features-404.html">404 Error Page</a></li>
-                                                <li><a href="_soccer_features-search-results.html">Search Results</a></li>
-                                                <li><a href="_soccer_page-contacts.html">Contact Us</a></li>
-                                            </ul>
-                                            <ul class="col-lg-2 col-md-3 col-12 main-nav__ul">
-                                                <li class="main-nav__title">Other Pages</li>
-                                                <li><a href="_soccer_page-sponsors.html">Sponsors</a></li>
-                                                <li><a href="_soccer_page-faqs.html">FAQs</a></li>
-                                                <li><a href="_soccer_staff-single.html">Staff Member</a></li>
-                                                <li><a href="_soccer_event-tournament.html">Tournament</a></li>
-                                                <li><a href="_soccer_shop-list.html">Shop Page</a></li>
-                                                <li><a href="_soccer_shop-cart.html">Shopping Cart</a></li>
-                                                <li><a href="_soccer_shop-wishlist.html">Wishlist</a></li>
-                                                <li><a href="_soccer_shop-checkout.html">Checkout</a></li>
-                                            </ul>
-                                            <div class="col-lg-4 col-md-3 col-12">
-                                                <div class="posts posts--simple-list posts--simple-list--lg">
-                                                    <div class="posts__item posts__item--category-1">
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title"><a href="#">The team is starting a new power breakfast regimen</a></h6>
-                                                            <time datetime="2017-08-23" class="posts__date">August 23rd, 2017</time>
-                                                            <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                        </div>
-                                                        <div class="posts__footer card__footer">
-                                                            <div class="post-author">
-                                                                <figure class="post-author__avatar"><img src="web_assets/images/samples/avatar-1.jpg" alt="Post Author Avatar" /></figure>
-                                                                <div class="post-author__info"><h4 class="post-author__name">James Spiegel</h4></div>
-                                                            </div>
-                                                            <ul class="post__meta meta">
-                                                                <li class="meta__item meta__item--likes">
-                                                                    <a href="#"><i class="meta-like meta-like--active icon-heart"></i> 530</a>
-                                                                </li>
-                                                                <li class="meta__item meta__item--comments"><a href="#">18</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-3 col-12">
-                                                <ul class="posts posts--simple-list">
-                                                    <li class="posts__item posts__item--category-1">
-                                                        <figure class="posts__thumb">
-                                                            <a href="#"><img src="web_assets/images/samples/post-img3-xs.jpg" alt="" /></a>
-                                                        </figure>
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title"><a href="#">The new eco friendly stadium won a Leafy Award in 2016</a></h6>
-                                                            <time datetime="2016-08-21" class="posts__date">August 21st, 2016</time>
-                                                        </div>
-                                                    </li>
-                                                    <li class="posts__item posts__item--category-2">
-                                                        <figure class="posts__thumb">
-                                                            <a href="#"><img src="web_assets/images/samples/post-img1-xs.jpg" alt="" /></a>
-                                                        </figure>
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">Injuries</span></div>
-                                                            <h6 class="posts__title"><a href="#">Mark Johnson has a Tibia Fracture and is gonna be out</a></h6>
-                                                            <time datetime="2016-08-23" class="posts__date">August 23rd, 2016</time>
-                                                        </div>
-                                                    </li>
-                                                    <li class="posts__item posts__item--category-1">
-                                                        <figure class="posts__thumb">
-                                                            <a href="#"><img src="web_assets/images/samples/post-img4-xs.jpg" alt="" /></a>
-                                                        </figure>
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title"><a href="#">The team is starting a new power breakfast regimen</a></h6>
-                                                            <time datetime="2016-08-21" class="posts__date">August 21st, 2016</time>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="">
-                                        <a href="_soccer_team-overview.html">The Team</a>
-                                        <ul class="main-nav__sub">
-                                            <li>
-                                                <a href="_soccer_game-overview.html">Team</a>
-                                                <ul class="main-nav__sub-2">
-                                                    <li><a href="_soccer_game-overview.html">Game Overview</a></li>
-                                                    <li><a href="_soccer_team-overview.html">Overview</a></li>
-                                                    <li>
-                                                        <a href="_soccer_team-roster.html">Roster</a>
-                                                        <ul class="main-nav__sub-2">
-                                                            <li><a href="_soccer_team-roster.html">Roster - 1</a></li>
-                                                            <li>
-                                                                <a href="_soccer_team-roster-2.html">Roster - 2 &nbsp; <span class="label label-danger">New</span></a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="_soccer_team-standings.html">Standings</a></li>
-                                                    <li><a href="_soccer_team-last-results.html">Latest Results</a></li>
-                                                    <li><a href="_soccer_team-schedule.html">Schedule</a></li>
-                                                    <li>
-                                                        <a href="_soccer_team-gallery.html">Gallery</a>
-                                                        <ul class="main-nav__sub-2">
-                                                            <li><a href="_soccer_team-gallery-album.html">Single Album</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="_soccer_player-overview.html">Player</a>
-                                                <ul class="main-nav__sub-2">
-                                                    <li><a href="_soccer_player-overview.html">Overview</a></li>
-                                                    <li><a href="_soccer_player-stats.html">Full Statistics</a></li>
-                                                    <li><a href="_soccer_player-bio.html">Biography</a></li>
-                                                    <li><a href="_soccer_player-news.html">Related News</a></li>
-                                                    <li><a href="_soccer_player-gallery.html">Gallery</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="_soccer_staff-single.html">Staff Member</a></li>
-                                            <li>
-                                                <a href="_soccer_event-tournament.html">Tournament &nbsp; <span class="label label-danger">New</span></a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="">
-                                        <a href="#">News</a>
-                                        <ul class="main-nav__sub">
-                                            <li class=""><a href="_soccer_blog-1.html">News - version 1</a></li>
-                                            <li class=""><a href="_soccer_blog-2.html">News - version 2</a></li>
-                                            <li class=""><a href="_soccer_blog-3.html">News - version 3</a></li>
-                                            <li class=""><a href="_soccer_blog-4.html">News - version 4</a></li>
-                                            <li>
-                                                <a href="#">Post</a>
-                                                <ul class="main-nav__sub-2">
-                                                    <li><a href="_soccer_blog-post-1.html">Single Post - version 1</a></li>
-                                                    <li><a href="_soccer_blog-post-2.html">Single Post - version 2</a></li>
-                                                    <li><a href="_soccer_blog-post-3.html">Single Post - version 3</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="">
-                                        <a href="_soccer_shop-grid.html">Shop</a>
-                                        <ul class="main-nav__sub">
-                                            <li class=""><a href="_soccer_shop-grid.html">Shop - Grid</a></li>
-                                            <li class=""><a href="_soccer_shop-list.html">Shop - List</a></li>
-                                            <li class=""><a href="_soccer_shop-product.html">Single Product</a></li>
-                                            <li class=""><a href="_soccer_shop-cart.html">Shopping Cart</a></li>
-                                            <li class=""><a href="_soccer_shop-checkout.html">Checkout</a></li>
-                                            <li class=""><a href="_soccer_shop-wishlist.html">Wishlist</a></li>
-                                            <li class=""><a href="_soccer_shop-login.html">Login</a></li>
-                                            <li class=""><a href="_soccer_shop-account.html">Account</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <!-- Social Links -->
-                                <ul class="social-links social-links--inline social-links--main-nav">
-                                    <li class="social-links__item">
-                                        <a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li class="social-links__item">
-                                        <a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li class="social-links__item">
-                                        <a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus"></i></a>
-                                    </li>
-                                </ul>
-                                <!-- Social Links / End --><!-- Pushy Panel Toggle -->
-                                <a href="#" class="pushy-panel__toggle"><span class="pushy-panel__line"></span> </a>
-                                <!-- Pushy Panel Toggle / Eng -->
-                            </nav>
-                            <!-- Main Navigation / End -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Header Primary / End -->
-            </header>
-            <!-- Header / End --><!-- Pushy Panel - Dark -->
-            <aside class="pushy-panel pushy-panel--dark">
-                <div class="pushy-panel__inner">
-                    <header class="pushy-panel__header">
-                        <div class="pushy-panel__logo">
-                            <a href="#"><img src="{{asset('web_assets/images/main_logo.png')}}" srcset="web_assets/images/soccer/logo@2x.png 2x" alt="Alchemists" /></a>
-                        </div>
-                    </header>
-                    <div class="pushy-panel__content">
-                        <!-- Widget: Posts -->
-                        <aside class="widget widget-popular-posts widget--side-panel">
-                            <div class="widget__content">
-                                <ul class="posts posts--simple-list">
-                                    <li class="posts__item posts__item--category-1">
-                                        <figure class="posts__thumb">
-                                            <a href="#"><img src="web_assets/images/samples/post-img19-xs.jpg" alt="" /></a>
-                                        </figure>
-                                        <div class="posts__inner">
-                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                            <h6 class="posts__title"><a href="#">The Team will make a small vacation to the Caribbean</a></h6>
-                                            <time datetime="2016-08-23" class="posts__date">June 12th, 2018</time>
-                                        </div>
-                                        <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                    </li>
-                                    <li class="posts__item posts__item--category-2">
-                                        <figure class="posts__thumb">
-                                            <a href="#"><img src="web_assets/images/samples/post-img18-xs.jpg" alt="" /></a>
-                                        </figure>
-                                        <div class="posts__inner">
-                                            <div class="posts__cat"><span class="label posts__cat-label">Injuries</span></div>
-                                            <h6 class="posts__title"><a href="#">Jenny Jackson won&#x27;t be able to play the next game</a></h6>
-                                            <time datetime="2016-08-23" class="posts__date">May 15th, 2018</time>
-                                        </div>
-                                        <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                    </li>
-                                    <li class="posts__item posts__item--category-1">
-                                        <figure class="posts__thumb">
-                                            <a href="#"><img src="web_assets/images/samples/post-img8-xs.jpg" alt="" /></a>
-                                        </figure>
-                                        <div class="posts__inner">
-                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                            <h6 class="posts__title"><a href="#">The team is starting a new power breakfast regimen</a></h6>
-                                            <time datetime="2016-08-23" class="posts__date">March 16th, 2018</time>
-                                        </div>
-                                        <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                    </li>
-                                    <li class="posts__item posts__item--category-3">
-                                        <figure class="posts__thumb">
-                                            <a href="#"><img src="web_assets/images/samples/post-img20-xs.jpg" alt="" /></a>
-                                        </figure>
-                                        <div class="posts__inner">
-                                            <div class="posts__cat"><span class="label posts__cat-label">The League</span></div>
-                                            <h6 class="posts__title"><a href="#">The Alchemists need two win the next two games</a></h6>
-                                            <time datetime="2016-08-23" class="posts__date">February 8th, 2018</time>
-                                        </div>
-                                        <div class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </aside>
-                        <!-- Widget: Posts / End --><!-- Widget: Tag Cloud -->
-                        <aside class="widget widget--side-panel widget-tagcloud">
-                            <div class="widget__title"><h4>Popular Tags</h4></div>
-                            <div class="widget__content">
-                                <div class="tagcloud">
-                                    <a href="#" class="btn btn-primary btn-xs btn-outline btn-sm">PLAYOFFS</a> <a href="#" class="btn btn-primary btn-xs btn-outline btn-sm">ALCHEMISTS</a>
-                                    <a href="#" class="btn btn-primary btn-xs btn-outline btn-sm">INJURIES</a> <a href="#" class="btn btn-primary btn-xs btn-outline btn-sm">TEAM</a>
-                                    <a href="#" class="btn btn-primary btn-xs btn-outline btn-sm">INCORPORATIONS</a> <a href="#" class="btn btn-primary btn-xs btn-outline btn-sm">UNIFORMS</a>
-                                    <a href="#" class="btn btn-primary btn-xs btn-outline btn-sm">CHAMPIONS</a> <a href="#" class="btn btn-primary btn-xs btn-outline btn-sm">PROFESSIONAL</a>
-                                    <a href="#" class="btn btn-primary btn-xs btn-outline btn-sm">COACH</a> <a href="#" class="btn btn-primary btn-xs btn-outline btn-sm">STADIUM</a>
-                                    <a href="#" class="btn btn-primary btn-xs btn-outline btn-sm">NEWS</a> <a href="#" class="btn btn-primary btn-xs btn-outline btn-sm">PLAYERS</a>
-                                    <a href="#" class="btn btn-primary btn-xs btn-outline btn-sm">WOMEN DIVISION</a> <a href="#" class="btn btn-primary btn-xs btn-outline btn-sm">AWARDS</a>
-                                </div>
-                            </div>
-                        </aside>
-                        <!-- Widget: Tag Cloud / End --><!-- Widget: Banner -->
-                        <aside class="widget widget--side-panel widget-banner">
-                            <div class="widget__content">
-                                <figure class="widget-banner__img">
-                                    <a href="#"><img src="web_assets/images/samples/banner.jpg" alt="Banner" /></a>
-                                </figure>
-                            </div>
-                        </aside>
-                        <!-- Widget: Banner / End -->
-                    </div>
-                    <a href="#" class="pushy-panel__back-btn"></a>
-                </div>
-            </aside>
-            <!-- Pushy Panel - Dark / End --><!-- Hero Slider
-        ================================================== -->
-            
-            <!-- Content
-        ================================================== -->
-            @yield('mainContent')
-            <!-- Content / End --><!-- Footer
-        ================================================== -->
-            <footer id="footer" class="footer">
-                <!-- Footer Widgets -->
-                <div class="footer-widgets">
-                    <div class="footer-widgets__inner">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-6 col-lg-3">
-                                    <div class="footer-col-inner">
-                                        <!-- Footer Logo -->
-                                        <div class="footer-logo footer-logo--has-txt">
-                                            <a href="index.html">
-                                                <img src="web_assets/images/soccer/logo-footer.png" srcset="web_assets/images/soccer/logo-footer@2x.png 2x" alt="The Alchemists" class="footer-logo__img" />
-                                                <div class="footer-logo__heading">
-                                                    <h5 class="footer-logo__txt">The Alchemists</h5>
-                                                    <span class="footer-logo__tagline">Elric Bros School</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <!-- Footer Logo / End --><!-- Widget: Contact Info -->
-                                        <div class="widget widget--footer widget-contact-info">
-                                            <div class="widget__content">
-                                                <div class="widget-contact-info__desc">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur cing elit, sed do eiusmod tempor incididunt uten labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                                </div>
-                                                <div class="widget-contact-info__body info-block">
-                                                    <div class="info-block__item">
-                                                        <svg role="img" class="df-icon df-icon--soccer-ball"><use xlink:href="web_assets/images/icons-soccer.svg#soccer-ball" /></svg>
-                                                        <h6 class="info-block__heading">Contact Us</h6>
-                                                        <a class="info-block__link" href="mailto:tryouts@alchemists.com">tryouts@alchemists.com</a>
-                                                    </div>
-                                                    <div class="info-block__item">
-                                                        <svg role="img" class="df-icon df-icon--whistle"><use xlink:href="web_assets/images/icons-soccer.svg#whistle" /></svg>
-                                                        <h6 class="info-block__heading">Join Our Team!</h6>
-                                                        <a class="info-block__link" href="mailto:info@alchemists.com">info@alchemists.com</a>
-                                                    </div>
-                                                    <div class="info-block__item info-block__item--nopadding">
-                                                        <ul class="social-links">
-                                                            <li class="social-links__item">
-                                                                <a href="#" class="social-links__link"><i class="fa fa-facebook"></i> Facebook</a>
-                                                            </li>
-                                                            <li class="social-links__item">
-                                                                <a href="#" class="social-links__link"><i class="fa fa-twitter"></i> Twitter</a>
-                                                            </li>
-                                                            <li class="social-links__item">
-                                                                <a href="#" class="social-links__link"><i class="fa fa-google-plus"></i> Google+</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Widget: Contact Info / End -->
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-3">
-                                    <div class="footer-col-inner">
-                                        <!-- Widget: Popular Posts / End -->
-                                        <div class="widget widget--footer widget-popular-posts">
-                                            <h4 class="widget__title">Popular News</h4>
-                                            <div class="widget__content">
-                                                <ul class="posts posts--simple-list">
-                                                    <li class="posts__item posts__item--category-1">
-                                                        <figure class="posts__thumb posts__thumb--hover">
-                                                            <a href="#"><img src="web_assets/images/samples/post-img3-xs.jpg" alt="" /></a>
-                                                        </figure>
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title posts__title--color-hover"><a href="_soccer_blog-post-1.html">The new eco friendly stadium won a Leafy Award in 2017</a></h6>
-                                                            <time datetime="2017-08-21" class="posts__date">June 12th, 2018</time>
-                                                        </div>
-                                                    </li>
-                                                    <li class="posts__item posts__item--category-2">
-                                                        <figure class="posts__thumb posts__thumb--hover">
-                                                            <a href="#"><img src="web_assets/images/samples/post-img18-xs.jpg" alt="" /></a>
-                                                        </figure>
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">Injuries</span></div>
-                                                            <h6 class="posts__title posts__title--color-hover"><a href="_soccer_blog-post-1.html">Jenny Jackson won&#x27;t be able to play the next game</a></h6>
-                                                            <time datetime="2017-08-21" class="posts__date">June 2nd, 2018</time>
-                                                        </div>
-                                                    </li>
-                                                    <li class="posts__item posts__item--category-1">
-                                                        <figure class="posts__thumb posts__thumb--hover">
-                                                            <a href="#"><img src="web_assets/images/samples/post-img8-xs.jpg" alt="" /></a>
-                                                        </figure>
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title posts__title--color-hover"><a href="_soccer_blog-post-1.html">The team is starting a new power breakfast regimen</a></h6>
-                                                            <time datetime="2017-08-21" class="posts__date">January 25th, 2018</time>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- Widget: Popular Posts / End -->
-                                    </div>
-                                </div>
-                                <div class="clearfix visible-sm"></div>
-                                <div class="col-sm-6 col-lg-3">
-                                    <div class="footer-col-inner">
-                                        <!-- Widget: Featured News / End -->
-                                        <div class="widget widget--footer widget-featured-posts">
-                                            <h4 class="widget__title">Featured News</h4>
-                                            <div class="widget__content">
-                                                <ul class="posts posts--simple-list">
-                                                    <li class="posts__item posts__item--category-1">
-                                                        <figure class="posts__thumb posts__thumb--hover">
-                                                            <a href="#"><img src="web_assets/images/samples/post-img21-xs.jpg" alt="" /></a>
-                                                        </figure>
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title posts__title--color-hover"><a href="_soccer_blog-post-1.html">The team trainings are instensifying looking at the next match</a></h6>
-                                                            <time datetime="2017-08-21" class="posts__date">August 21st, 2018</time>
-                                                        </div>
-                                                    </li>
-                                                    <li class="posts__item posts__item--category-1">
-                                                        <figure class="posts__thumb posts__thumb--hover">
-                                                            <a href="#"><img src="web_assets/images/samples/post-img5-xs.jpg" alt="" /></a>
-                                                        </figure>
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The Team</span></div>
-                                                            <h6 class="posts__title posts__title--color-hover"><a href="_soccer_blog-post-1.html">The Alchemists team is appearing in L.A. Beach for charity</a></h6>
-                                                            <time datetime="2017-08-21" class="posts__date">July 13th, 2018</time>
-                                                        </div>
-                                                    </li>
-                                                    <li class="posts__item posts__item--category-3">
-                                                        <figure class="posts__thumb posts__thumb--hover">
-                                                            <a href="#"><img src="web_assets/images/samples/post-img20-xs.jpg" alt="" /></a>
-                                                        </figure>
-                                                        <div class="posts__inner">
-                                                            <div class="posts__cat"><span class="label posts__cat-label">The League</span></div>
-                                                            <h6 class="posts__title posts__title--color-hover"><a href="_soccer_blog-post-1.html">The Alchemists need two win the next two games</a></h6>
-                                                            <time datetime="2017-08-21" class="posts__date">May 7th, 2018</time>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- Widget: Featured News / End -->
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-3">
-                                    <div class="footer-col-inner">
-                                        <!-- Widget: Contact / End -->
-                                        <div class="widget widget--footer widget-contact">
-                                            <h4 class="widget__title">Quick Contact</h4>
-                                            <div class="widget__content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur cing elit, sed do eiusmod tempor.</p>
-                                                <form action="#" class="contact-form">
-                                                    <div class="form-group form-group--xs"><input type="email" class="form-control input-sm" id="contact-form-email" placeholder="Your email address..." /></div>
-                                                    <div class="form-group form-group--xs"><textarea class="form-control input-sm" name="contact-form-message" rows="4" placeholder="Your message..."></textarea></div>
-                                                    <button type="submit" class="btn btn-primary-inverse btn-sm btn-block">Send Your Message</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <!-- Widget: Contact / End -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Sponsors -->
-                    <div class="container">
-                        <div class="sponsors">
-                            <h6 class="sponsors-title">Our Sponsors:</h6>
-                            <ul class="sponsors-logos">
-                                <li class="sponsors__item">
-                                    <a href="#" target="_blank"><img src="web_assets/images/soccer/sponsor-visa.png" alt="" /></a>
-                                </li>
-                                <li class="sponsors__item">
-                                    <a href="#" target="_blank"><img src="web_assets/images/soccer/sponsor-discover.png" alt="" /></a>
-                                </li>
-                                <li class="sponsors__item">
-                                    <a href="#" target="_blank"><img src="web_assets/images/soccer/sponsor-paypal.png" alt="" /></a>
-                                </li>
-                                <li class="sponsors__item">
-                                    <a href="#" target="_blank"><img src="web_assets/images/soccer/sponsor-skrill.png" alt="" /></a>
-                                </li>
-                                <li class="sponsors__item">
-                                    <a href="#" target="_blank"><img src="web_assets/images/soccer/sponsor-westernunion.png" alt="" /></a>
-                                </li>
-                                <li class="sponsors__item">
-                                    <a href="#" target="_blank"><img src="web_assets/images/soccer/sponsor-payoneer.png" alt="" /></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Sponsors / End -->
-                </div>
-                <!-- Footer Widgets / End --><!-- Footer Secondary -->
-                <div class="footer-secondary">
-                    <div class="container">
-                        <div class="footer-secondary__inner">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="footer-copyright"><a href="_soccer_index.html">The Alchemists</a> 2018 &nbsp; | &nbsp; All Rights Reserved</div>
-                                </div>
-                                <div class="col-md-8">
-                                    <ul class="footer-nav footer-nav--right footer-nav--condensed footer-nav--sm">
-                                        <li class="footer-nav__item"><a href="_soccer_index.html">Home</a></li>
-                                        <li class="footer-nav__item"><a href="_soccer_features-shortcodes.html">Features</a></li>
-                                        <li class="footer-nav__item"><a href="_soccer_team-standings.html">Statistics</a></li>
-                                        <li class="footer-nav__item"><a href="_soccer_team-overview.html">The Team</a></li>
-                                        <li class="footer-nav__item"><a href="_soccer_blog-3.html">News</a></li>
-                                        <li class="footer-nav__item"><a href="_soccer_shop-grid.html">Shop</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Footer Secondary / End -->
-            </footer>
-            <!-- Footer / End --><!-- Login/Register Tabs Modal -->
-            <div class="modal fade" id="modal-login-register-tabs" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg modal--login modal--login-only" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal-account-holder">
-                                <div class="modal-account__item modal-account__item--logo">
-                                    <p class="modal-account__item-register-txt">Don’t have an account? <a href="#">Register Now</a> and enjoy all our benefits!</p>
-                                </div>
-                                <div class="modal-account__item">
-                                    <!-- Tab panes -->
-                                    <div class="tab-content">
-                                        <!-- Tab: Login -->
-                                        <div role="tabpanel" class="tab-pane fade show active" id="tab-login">
-                                            <!-- Login Form -->
-                                            <form action="#" class="modal-form">
-                                                <h5>Login to your account</h5>
-                                                <div class="form-group"><input type="email" class="form-control" placeholder="Enter your email address..." /></div>
-                                                <div class="form-group"><input type="password" class="form-control" placeholder="Enter your password..." /></div>
-                                                <div class="form-group form-group--pass-reminder">
-                                                    <label class="checkbox checkbox-inline"><input type="checkbox" id="inlineCheckbox1" value="option1" checked="checked" /> Remember Me <span class="checkbox-indicator"></span></label>
-                                                    <a href="#">Forgot your password?</a>
-                                                </div>
-                                                <div class="form-group form-group--submit"><a href="_soccer_shop-account.html" class="btn btn-primary-inverse btn-block">Enter to your account</a></div>
-                                                <div class="modal-form--social">
-                                                    <h6>or Login with your social profile:</h6>
-                                                    <ul class="social-links social-links--btn text-center">
-                                                        <li class="social-links__item">
-                                                            <a href="#" class="social-links__link social-links__link--lg social-links__link--fb"><i class="fa fa-facebook"></i></a>
-                                                        </li>
-                                                        <li class="social-links__item">
-                                                            <a href="#" class="social-links__link social-links__link--lg social-links__link--twitter"><i class="fa fa-twitter"></i></a>
-                                                        </li>
-                                                        <li class="social-links__item">
-                                                            <a href="#" class="social-links__link social-links__link--lg social-links__link--gplus"><i class="fa fa-google-plus"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </form>
-                                            <!-- Login Form / End -->
-                                        </div>
-                                        <!-- Tab: Login / End --><!-- Tab: Register -->
-                                        <div role="tabpanel" class="tab-pane fade" id="tab-register">
-                                            <!-- Register Form -->
-                                            <form action="#" class="modal-form">
-                                                <h5>Register Now!</h5>
-                                                <div class="form-group"><input type="email" class="form-control" placeholder="Enter your email address..." /></div>
-                                                <div class="form-group"><input type="password" class="form-control" placeholder="Enter your password..." /></div>
-                                                <div class="form-group"><input type="password" class="form-control" placeholder="Repeat your password..." /></div>
-                                                <div class="form-group form-group--submit"><a href="_soccer_shop-account.html" class="btn btn-success btn-block">Create Your Account</a></div>
-                                                <div class="modal-form--note">You’ll receive a confirmation email in your inbox with a link to activate your account.</div>
-                                            </form>
-                                            <!-- Register Form / End -->
-                                        </div>
-                                        <!-- Tab: Register / End -->
-                                    </div>
-                                    <!-- Nav tabs -->
-                                    <div class="nav-tabs-login-wrapper">
-                                        <ul class="nav nav-tabs nav-justified nav-tabs--login" role="tablist">
-                                            <li class="nav-item"><a class="nav-link active" href="#tab-login" role="tab" data-toggle="tab">Login</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="#tab-register" role="tab" data-toggle="tab">Register</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- Nav tabs / End -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Login/Register Tabs Modal / End -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="style/images/favicon.png">
+  <title>Snowlake</title>
+  <link rel="stylesheet" type="text/css" href="http://themes.iki-bir.com/snowlake/style/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://themes.iki-bir.com/snowlake/style/css/plugins.css">
+  <link rel="stylesheet" type="text/css" href="http://themes.iki-bir.com/snowlake/style/revolution/css/settings.css">
+  <link rel="stylesheet" type="text/css" href="http://themes.iki-bir.com/snowlake/style/revolution/css/layers.css">
+  <link rel="stylesheet" type="text/css" href="http://themes.iki-bir.com/snowlake/style/revolution/css/navigation.css">
+  <link rel="stylesheet" type="text/css" href="http://themes.iki-bir.com/snowlake/style/type/type.css">
+  <link rel="stylesheet" type="text/css" href="http://themes.iki-bir.com/snowlake/style.css">
+  <link rel="stylesheet" type="text/css" href="http://themes.iki-bir.com/snowlake/style/css/color/blue.css">
+</head>
+<body>
+  <div class="content-wrapper">
+    <nav class="navbar absolute transparent navbar-expand-lg nav-uppercase">
+      <div class="container flex-row justify-content-center">
+        <div class="navbar-brand"><a href="index.html"><img src="#" srcset="style/images/logo.png 1x, style/images/logo@2x.png 2x" alt="" /></a></div>
+        <div class="navbar-other ml-auto order-lg-3">
+          <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+            <li class="nav-item">
+              <div class="navbar-hamburger d-lg-none d-xl-none ml-auto"><button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button></div>
+            </li>
+            <li class="nav-item d-none d-lg-block pl-0"><a href="#" class="btn btn-default m-0">Free Trial</a></li>
+          </ul>
+          <!-- /.navbar-nav -->
         </div>
-        <!-- Javascript Files
-    ================================================== --><!-- Core JS -->
-        <script src="{{asset('public/web_assets/js/jquery.min.js')}}"></script>
-        <script src="{{asset('public/web_assets/js/jquery-migrate.min.js')}}"></script>
-        <script src="{{asset('public/web_assets/js/bootstrap.bundle.min.js')}}"></script>
-        <script src="{{asset('public/web_assets/js/core.js')}}"></script>
-        <script src="{{asset('public/web_assets/js/jquery.twitter.js')}}"></script>
-        <script src="{{asset('public/web_assets/js/init.js')}}"></script>
-        <script src="{{asset('public/web_assets/js/custom.js')}}"></script>
-
-
-
-
-    
-    </body>
+        <!-- /.navbar-other -->
+        <div class="navbar-collapse offcanvas-nav">
+          <div class="offcanvas-header d-lg-none d-xl-none">
+            <a href="index.html"><img src="#" srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="" /></a>
+            <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+          </div>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+              <ul class="dropdown-menu mega-menu boxed list-view text-left">
+                <li class="mega-menu-content">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <ul class="list-unstyled">
+                        <li><a class="dropdown-item" href="index.html">Digital Startup</a></li>
+                        <li><a class="dropdown-item" href="index2.html">Saas Landing</a></li>
+                        <li><a class="dropdown-item" href="index3.html">SEO Agency</a></li>
+                        <li><a class="dropdown-item" href="index4.html">Modern Business</a></li>
+                        <li><a class="dropdown-item" href="index5.html">Design Agency</a></li>
+                        <li><a class="dropdown-item" href="index6.html">App Presentation</a></li>
+                        <li><a class="dropdown-item" href="index7.html">Creative Landing</a></li>
+                      </ul>
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-3">
+                      <ul class="list-unstyled">
+                        <li><a class="dropdown-item" href="index8.html">Marketing Startup</a></li>
+                        <li><a class="dropdown-item" href="index9.html">Digital Agency</a></li>
+                        <li><a class="dropdown-item" href="index10.html">Creative Business</a></li>
+                        <li><a class="dropdown-item" href="index11.html">Software Landing</a></li>
+                        <li><a class="dropdown-item" href="index12.html">App Landing</a></li>
+                        <li><a class="dropdown-item" href="index13.html">Creative Agency</a></li>
+                        <li><a class="dropdown-item" href="index14.html">Wedding Photography</a></li>
+                      </ul>
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-3">
+                      <ul class="list-unstyled">
+                        <li><a class="dropdown-item" href="index15.html">Food Photography</a></li>
+                        <li><a class="dropdown-item" href="index16.html">Creative Onepage</a></li>
+                        <li><a class="dropdown-item" href="index17.html">Marketing Company</a></li>
+                        <li><a class="dropdown-item" href="index18.html">Startup Business</a></li>
+                        <li><a class="dropdown-item" href="index19.html">Creative Resume</a></li>
+                        <li><a class="dropdown-item" href="index20.html">Digital Studio</a></li>
+                        <li><a class="dropdown-item" href="index21.html">Travel Blog</a></li>
+                      </ul>
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-3">
+                      <ul class="list-unstyled">
+                        <li><a class="dropdown-item" href="index22.html">Minimal Shop</a></li>
+                        <li><a class="dropdown-item" href="index23.html">Minimal Portfolio</a></li>
+                        <li><a class="dropdown-item" href="index24.html">Coming Soon</a></li>
+                        <li><a class="dropdown-item" href="index25.html">Personal Creative</a></li>
+                        <li><a class="dropdown-item" href="index26.html">Minimal Photography</a></li>
+                        <li><a class="dropdown-item" href="index27.html">Maintenance</a></li>
+                      </ul>
+                    </div>
+                    <!--/column -->
+                  </div>
+                  <!--/.row -->
+                </li>
+                <!--/.mega-menu-content-->
+              </ul>
+              <!--/.dropdown-menu -->
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">Features</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Header</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="header.html">Classic Header</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="header2.html">Classic Light Header</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="header3.html">Classic Dark Header</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="header4.html">Header with Topbar</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="header5.html">Wide Header</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="header6.html">Extended Header</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="header7.html">Fancy Light Header</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="header8.html">Fancy Dark Header</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="header9.html">Centered Header</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Footer</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="footer.html">Footer with Details</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="footer2.html">Centered Footer</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="footer3.html">Simple Footer</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="footer4.html">Footer with Widgets</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="footer5.html">Minimalist Footer</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="footer6.html">Footer with Overflow</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="footer7.html">Footer with Background Image</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Page Title</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="page-title.html">Page Title with Image</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="page-title2.html">Page Title with Breadcrumbs</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="page-title3.html">Page Title with Light Wrapper</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="page-title4.html">Page Title with Gray Wrapper</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="page-title5.html">Page Title with Dark Wrapper</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="page-title6.html">Page Title with Colored Wrapper</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="page-title7.html">Page Title with Gradient Wrapper</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="page-title8.html">Page Title with Video Wrapper</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Modal Popup</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="modal-popup1.html">Subscription</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="modal-popup2.html">Subscription Alternative</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="modal-popup3.html">Sign Up</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="modal-popup4.html">Contact Form</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="modal-popup5.html">Cookie</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="modal-popup6.html">Sale</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle" href="#">Fonts</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="font1.html">Jost</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="font2.html">Nunito</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="font3.html">DM Sans + Zilla Slab</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="font4.html">HK Grotesk</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="font5.html">Abhaya Libre</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle" href="#">Colors</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="color1.html">Aqua</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color2.html">Blue</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color3.html">Brown</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color4.html">Cobalt</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color5.html">Green</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color6.html">Hibiscus</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color7.html">Leaf</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color8.html">Meander</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color9.html">Orange</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color10.html">Pink</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color11.html">Purple</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color12.html">Red</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color13.html">Rose</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color14.html">Sky</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color15.html">Teal</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color16.html">Violet</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="color17.html">Yellow</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Onepage</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="index16.html">Demo I</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="index19.html">Demo II</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="dropdown-item" href="box-layout.html">Box Layout</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">Pages</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Services</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="services.html">Services I</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="services2.html">Services II</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="services3.html">Services III</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="services4.html">Services IV</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="services5.html">Services V</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">About</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="about.html">About I</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="about2.html">About II</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="about3.html">About III</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="about4.html">About IV</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Shop</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="shop2.html">Shop with Sidebar</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="shop3.html">Shop with Left Sidebar</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="shop-product.html">Product Page</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="shop-cart.html">Shopping Cart</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="shop-checkout.html">Checkout</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Contact</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="contact.html">Contact I</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="contact2.html">Contact II</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="contact3.html">Contact III</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="contact4.html">Contact IV</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                <li><a class="dropdown-item" href="page-loading.html">Page Loading</a></li>
+                <li><a class="dropdown-item" href="scroll-animation.html">Scroll Animation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#!">Elements</a>
+              <ul class="dropdown-menu mega-menu boxed list-view text-left">
+                <li class="mega-menu-content">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <ul class="list-unstyled">
+                        <li><a href="accordion.html">Accordion</a></li>
+                        <li><a href="alerts.html">Alerts</a></li>
+                        <li><a href="animated-text.html">Animated Text</a></li>
+                        <li><a href="blockquote.html">Blockquote</a></li>
+                        <li><a href="buttons-badges.html">Buttons & Badges</a></li>
+                        <li><a href="call-to-action.html">Call to Action</a></li>
+                        <li><a href="carousel.html">Carousel</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="countdown.html">Countdown</a></li>
+                        <li><a href="counter.html">Counter</a></li>
+                      </ul>
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-3">
+                      <ul class="list-unstyled">
+                        <li><a href="dividers.html">Dividers</a></li>
+                        <li><a href="dropcap.html">Dropcap</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="icon-concept.html">Icons - Concept</a></li>
+                        <li><a href="icon-jam.html">Icons - Jam</a></li>
+                        <li><a href="icon-icofont.html">Icons - Icofont</a></li>
+                        <li><a href="icon-lineal.html">Icons - Lineal</a></li>
+                        <li><a href="icon-box.html">Icon Box</a></li>
+                        <li><a href="image-hover.html">Image Hover</a></li>
+                        <li><a href="image-mask.html">Image Mask</a></li>
+                      </ul>
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-3">
+                      <ul class="list-unstyled">
+                        <li><a href="lightbox.html">Lightbox</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="player.html">Media Player</a></li>
+                        <li><a href="modal.html">Modal</a></li>
+                        <li><a href="pricing.html">Pricing Tables</a></li>
+                        <li><a href="process.html">Process Steps</a></li>
+                        <li><a href="progressbar.html">Progress Bar</a></li>
+                        <li><a href="animations.html">Scroll Animations</a></li>
+                        <li><a href="social-icons.html">Social Icons</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                      </ul>
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-3">
+                      <ul class="list-unstyled">
+                        <li><a href="tabs.html">Tabs</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="titles.html">Titles</a></li>
+                        <li><a href="toggle.html">Toggle</a></li>
+                        <li><a href="tooltip-popover.html">Tooltip & Popover</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="video-popup.html">Video Popup</a></li>
+                        <li><a href="waves.html">Waves</a></li>
+                        <li><a href="wrappers.html">Wrappers</a></li>
+                      </ul>
+                    </div>
+                    <!--/column -->
+                  </div>
+                  <!--/.row -->
+                </li>
+                <!--/.mega-menu-content-->
+              </ul>
+              <!--/.dropdown-menu -->
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">Portfolio</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="portfolio.html">Grid Portfolio</a></li>
+                <li><a class="dropdown-item" href="portfolio2.html">Grid Portfolio with Details</a></li>
+                <li><a class="dropdown-item" href="portfolio3.html">Masonry Portfolio</a></li>
+                <li><a class="dropdown-item" href="portfolio4.html">Masonry Portfolio with Details</a></li>
+                <li><a class="dropdown-item" href="portfolio5.html">Mosaic Portfolio</a></li>
+                <li><a class="dropdown-item" href="portfolio6.html">Fullscreen Grid Portfolio</a></li>
+                <li><a class="dropdown-item" href="portfolio7.html">Portfolio with Item Details</a></li>
+                <li><a class="dropdown-item" href="portfolio8.html">Box Portfolio with Item Details</a></li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Portfolio Posts</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="portfolio-post.html">Post with Multiple Images</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="portfolio-post2.html">Post with Slider</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="portfolio-post3.html">Post with Masonry Gallery</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="portfolio-post4.html">Post with Carousel</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="portfolio-post5.html">Post with Columns</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="portfolio-post6.html">Post with Video</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">Blog</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="blog.html">Grid View</a></li>
+                <li><a class="dropdown-item" href="blog2.html">Grid View with Sidebar</a></li>
+                <li><a class="dropdown-item" href="blog3.html">Box Grid View</a></li>
+                <li><a class="dropdown-item" href="blog4.html">Box Grid View with Sidebar</a></li>
+                <li><a class="dropdown-item" href="blog5.html">Classic View</a></li>
+                <li><a class="dropdown-item" href="blog6.html">Classic View with Sidebar</a></li>
+                <li><a class="dropdown-item" href="blog7.html">Box Classic View</a></li>
+                <li><a class="dropdown-item" href="blog8.html">Box Classic View with Sidebar</a></li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Blog Posts</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="blog-post.html">Post No Sidebar</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="blog-post2.html">Post with Sidebar</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="blog-post3.html">Box Post No Sidebar </a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="blog-post4.html">Box Post with Sidebar </a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- /.navbar-nav -->
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- /.navbar -->
+    <div class="offcanvas-info inverse-text">
+      <button class="plain offcanvas-close offcanvas-info-close"><i class="jam jam-close"></i></button>
+      <a href="index.html"><img src="#" srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="" /></a>
+      <div class="space30"></div>
+      <p>Snowlake is a multi-concept and powerful site template contains rich layouts with possibility of unlimited combinations & beautiful elements.</p>
+      <div class="space20"></div>
+      <div class="widget">
+        <h5 class="widget-title">Contact Info</h5>
+        <address> Moonshine St. 14/05 <br /> Light City, London <div class="space20"></div>
+          <a href="mailto:first.last@email.com" class="nocolor">info@email.com</a><br /> +00 (123) 456 78 90 </address>
+      </div>
+      <!-- /.widget -->
+      <div class="widget">
+        <h3 class="widget-title">Learn More</h3>
+        <ul class="list-unstyled">
+          <li><a href="#" class="nocolor">Our Story</a></li>
+          <li><a href="#" class="nocolor">Terms of Use</a></li>
+          <li><a href="#" class="nocolor">Privacy Policy</a></li>
+          <li><a href="#" class="nocolor">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- /.widget -->
+      <div class="widget">
+        <h3 class="widget-title">Follow Us</h3>
+        <ul class="social social-mute social-s ml-auto">
+          <li><a href="#"><i class="jam jam-twitter"></i></a></li>
+          <li><a href="#"><i class="jam jam-facebook"></i></a></li>
+          <li><a href="#"><i class="jam jam-instagram"></i></a></li>
+          <li><a href="#"><i class="jam jam-vimeo"></i></a></li>
+          <li><a href="#"><i class="jam jam-youtube"></i></a></li>
+        </ul>
+      </div>
+      <!-- /.widget -->
+    </div>
+    <!-- /.offcanvas-info -->
+    <div class="wrapper bg-opacity-default">
+      <div class="rev_slider_wrapper fullwidth-container dark-spinner">
+        <div id="slider7" class="rev_slider fullwidthbanner" data-version="5.4.7">
+          <ul>
+            <li data-transition="fade" data-thumb=""><img src="style/images/dummy.png" style="background:transparent" alt="" />
+              <div class="tp-caption" 
+                   data-x="['center','center','center','center']" 
+                   data-y="['bottom','bottom','bottom','bottom']" 
+                   data-hoffset="['0','0','0','0']" 
+                   data-voffset="['-2','-2','-2','-2']" 
+                   data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+                   data-visibility="['on','on','on','on']" 
+                   data-width="none" 
+                   data-height="none" 
+                   data-type="image" 
+                   data-responsive="on" 
+                   data-responsive_offset="on" 
+                   data-basealign="slide" style="z-index: 5;"><img 
+                   data-lazyload="" src="{{asset('public/web_assets/images/rocket1.png')}}"  
+                   data-ww="['100%','100%','100%','100%']" 
+                   data-hh="auto" alt="" />           
+              </div>
+              <!-- /.tp-caption -->
+              <div class="tp-caption" 
+                   data-x="['center','center','center','center']" 
+                   data-y="['middle','middle','middle','middle']" 
+                   data-hoffset="['260','260','260','260']" 
+                   data-voffset="['60','60','60','60']" 
+                   data-frames='[{"delay":600,"speed":1200,"frame":"0","from":"y:bottom;rX:90deg;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+                   data-visibility="['on','on','on','off']" 
+                   data-width="none" 
+                   data-height="none" 
+                   data-type="image" 
+                   data-responsive="on" 
+                   data-responsive_offset="on" 
+                   data-basealign="slide" style="z-index: 5;"><img 
+                   data-lazyload="" src="{{asset('public/web_assets/images/rocket2.png')}}" 
+                   data-ww="['220','220','220','220']" 
+                   data-hh="auto" alt="" />
+              </div>
+              <!-- /.tp-caption -->
+              <div class="tp-caption" 
+                   data-x="['center','center','center','center']" 
+                   data-y="['middle','middle','middle','middle']" 
+                   data-hoffset="['260','260','260','260']" 
+                   data-voffset="['-170','-170','-170','-170']" 
+                   data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+                   data-visibility="['on','on','on','off']" 
+                   data-width="none" 
+                   data-height="none" 
+                   data-type="image" 
+                   data-responsive="on" 
+                   data-responsive_offset="on" 
+                   data-basealign="slide" style="z-index: 6;"><img 
+                   data-lazyload="" src="style/images/art/rocket3.png" 
+                   data-ww="['380','380','380','380']" 
+                   data-hh="auto" alt="" />
+              </div>
+              <!-- /.tp-caption -->
+              <div class="tp-caption" 
+                   data-x="['center','center','center','center']" 
+                   data-y="['middle','middle','middle','middle']" 
+                   data-hoffset="['300','300','300','300']" 
+                   data-voffset="['70','70','70','70']" 
+                   data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+                   data-visibility="['on','on','on','off']" 
+                   data-width="none" 
+                   data-height="none" 
+                   data-type="image" 
+                   data-responsive="on" 
+                   data-responsive_offset="on" 
+                   data-basealign="slide" style="z-index: 5;"><img 
+                   data-lazyload="" src="style/images/art/rocket4.png" 
+                   data-ww="['480','480','480','480']" 
+                   data-hh="auto" alt="" />
+              </div>
+              <!-- /.tp-caption -->
+              <div class="tp-caption font-weight-500 color-dark" 
+                   data-x="['left','left','left','center']" 
+                   data-y="middle" 
+                   data-hoffset="['50','30','30','0']" 
+                   data-voffset="['-125','-125','-125','-105']" 
+                   data-fontsize="['40','40','34','36']" 
+                   data-lineheight="['50','50','44','46']" 
+                   data-width="['500','500','420','340']" 
+                   data-textAlign="['left','left','left','center']" 
+                   data-whitespace="['normal','normal','normal','normal']" 
+                   data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+                   data-responsive="on" 
+                   data-responsive_offset="on" style="z-index: 9;">Grow Your Business with Our Marketing Solutions
+              </div>
+              <!-- /.tp-caption -->
+              <div class="tp-caption font-weight-300 color-dark" 
+                   data-x="['left','left','left','center']" 
+                   data-y="middle" 
+                   data-hoffset="['50','30','30','0']"
+                   data-voffset="['-20','-20','-20','30']" 
+                   data-fontsize="['26','26','22','24']" 
+                   data-lineheight="['36','36','32','34']" 
+                   data-width="['500','500','420','340']" 
+                   data-textAlign="['left','left','left','center']" 
+                   data-whitespace="['normal','normal','normal','normal']" 
+                   data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+                   data-responsive="on" 
+                   data-responsive_offset="on" style="z-index: 9;">We help our clients to increase their website traffic, rankings and visibility in search results.
+              </div>
+              <!-- /.tp-caption -->
+              <a class="tp-caption btn btn-l btn-default" 
+                   data-x="['left','left','left','center']" 
+                   data-y="middle" 
+                   data-hoffset="['50','30','30','0']"
+                   data-voffset="['75','75','75','135']" 
+                   data-width="['auto','auto','auto','auto']" 
+                   data-textAlign="['left','left','left','center']" 
+                   data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+                   data-responsive="on" 
+                   data-responsive_offset="on" style="z-index: 9;" href="#">Try It For Free
+              </a>
+              <!-- /.tp-caption -->
+            </li>
+          </ul>
+          <div class="tp-bannertimer tp-bottom"></div>
+        </div>
+        <!-- /.rev_slider -->
+      </div>
+      <!-- /.rev_slider_wrapper -->
+    </div>
+    <!-- /.wrapper -->
+    <div class="wrapper white-wrapper">
+      <div class="container inner pt-100">
+        <h2 class="title-color color-gray text-center">What We Do?</h2>
+        <h3 class="display-3 text-center">The full service we are offering is specifically <br class="d-none d-lg-block" />designed to meet your business needs.</h3>
+        <div class="space40"></div>
+        <div class="row text-center gutter-60">
+          <div class="col-md-6 col-lg-3">
+            <div class="icon icon-blob icon-blob-rose color-rose mb-20"> <i class="jam jam-search"></i> </div>
+            <h5>SEO Services</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-3">
+            <div class="icon icon-blob icon-blob-blue color-blue mb-20"> <i class="jam jam-layout"></i> </div>
+            <h5>Web Design</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+          </div>
+          <!--/column -->
+          <div class="space30 d-none d-md-block d-lg-none"></div>
+          <div class="col-md-6 col-lg-3">
+            <div class="icon icon-blob icon-blob-green color-green mb-20"> <i class="jam jam-share-alt"></i> </div>
+            <h5>Social Engagement</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-3">
+            <div class="icon icon-blob icon-blob-purple color-purple mb-20"> <i class="jam jam-task-list"></i> </div>
+            <h5>Content Marketing</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+        <div class="space140"></div>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <figure><img src="#" srcset="style/images/concept/concept8.png 1x, style/images/concept/concept8@2x.png 2x" alt="" /></figure>
+          </div>
+          <!--/column -->
+          <div class="space20 d-md-none"></div>
+          <div class="space50 d-none d-md-block d-lg-none"></div>
+          <div class="col-lg-6 pl-60 pl-md-15">
+            <h2 class="title-color color-gray">Why Choose Us?</h2>
+            <h3 class="display-3">Why is Search Engine Optimization important for your business?</h3>
+            <div class="space20"></div>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <ul class="icon-list bullet-default">
+              <li><i class="icofont-verification-check"></i>Aenean eu leo quam ornare.</li>
+              <li><i class="icofont-verification-check"></i>Nullam quis risus eget mollis.</li>
+              <li><i class="icofont-verification-check"></i>Donec elit non mi porta gravida.</li>
+              <li><i class="icofont-verification-check"></i>Fusce dapibus cursus commodo.</li>
+            </ul>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+        <div class="space140"></div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <figure><img src="#" srcset="style/images/concept/concept1.png 1x, style/images/concept/concept1@2x.png 2x" alt="" /></figure>
+          </div>
+          <!--/column -->
+          <div class="space20 d-md-none"></div>
+          <div class="space50 d-none d-md-block d-lg-none"></div>
+          <div class="col-lg-6 pr-60 pr-md-15">
+            <h2 class="title-color color-gray">Our Process</h2>
+            <h3 class="display-3">We bring solutions to make life easier for our customers</h3>
+            <div class="space30"></div>
+            <div class="d-flex flex-row justify-content-center">
+              <div>
+                <span class="icon icon-blob icon-blob-blue color-blue mr-25"><i class="jam jam-lightbulb"></i><span class="step bg-blue">1</span></span>
+              </div>
+              <div>
+                <h5>Collect Ideas</h5>
+                <p class="mb-0">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+              </div>
+            </div>
+            <div class="space30"></div>
+            <div class="d-flex flex-row justify-content-center">
+              <div>
+                <span class="icon icon-blob icon-blob-teal color-teal mr-25"><i class="jam jam-search-folder"></i><span class="step bg-teal">2</span></span>
+              </div>
+              <div>
+                <h5>Data Analysis</h5>
+                <p class="mb-0">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+              </div>
+            </div>
+            <div class="space30"></div>
+            <div class="d-flex flex-row justify-content-center">
+              <div>
+                <span class="icon icon-blob icon-blob-yellow color-yellow mr-25"><i class="jam jam-heart"></i><span class="step bg-yellow">3</span></span>
+              </div>
+              <div>
+                <h5>Magic Touch</h5>
+                <p class="mb-0">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+        <div class="space140"></div>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <figure><img src="#" srcset="style/images/concept/concept3.png 1x, style/images/concept/concept3@2x.png 2x" alt="" /></figure>
+          </div>
+          <!--/column -->
+          <div class="space20 d-md-none"></div>
+          <div class="space50 d-none d-md-block d-lg-none"></div>
+          <div class="col-lg-6 pl-60 pl-md-15 order-lg-2">
+            <h2 class="title-color color-gray">Our Personalized Solutions</h2>
+            <h3 class="display-3">Just sit and relax while we take care of your business needs</h3>
+            <div class="space20"></div>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <ul class="icon-list bullet-default">
+              <li><i class="icofont-verification-check"></i>Aenean eu leo quam ornare.</li>
+              <li><i class="icofont-verification-check"></i>Nullam quis risus eget mollis.</li>
+              <li><i class="icofont-verification-check"></i>Donec elit non mi porta gravida.</li>
+              <li><i class="icofont-verification-check"></i>Fusce dapibus cursus commodo.</li>
+            </ul>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.wrapper -->
+    <div class="wrapper light-wrapper">
+      <div class="container inner">
+        <h2 class="title-color color-gray text-center">Customer Stories</h2>
+        <h3 class="display-3 text-center">Customer satisfaction is our major goal. <br class="d-none d-lg-block" />See what our customers are saying about us.</h3>
+        <div class="space20"></div>
+        <div class="grid-view">
+          <div class="carousel owl-carousel gap-small" data-margin="0" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1140":{"items": "3"}}'>
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow">
+                  <blockquote>
+                    <p>"Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula."</p>
+                    <div class="blockquote-details">
+                      <div class="img-blob blob1"><img src="style/images/art/t1.jpg" alt="" /></div>
+                      <div class="info">
+                        <h6 class="mb-0">Connor Gibson</h6>
+                        <span class="meta mb-0">Financial Analyst</span>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.box -->
+              </div>
+              <!-- /.item-inner -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow">
+                  <blockquote>
+                    <p>"Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis."</p>
+                    <div class="blockquote-details">
+                      <div class="img-blob blob1"><img src="style/images/art/t2.jpg" alt="" /></div>
+                      <div class="info">
+                        <h6 class="mb-0">Coriss Ambady</h6>
+                        <span class="meta mb-0">Marketing Specialist</span>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.box -->
+              </div>
+              <!-- /.item-inner -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow">
+                  <blockquote>
+                    <p>"Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam venenatis."</p>
+                    <div class="blockquote-details">
+                      <div class="img-blob blob1"><img src="style/images/art/t3.jpg" alt="" /></div>
+                      <div class="info">
+                        <h6 class="mb-0">Barclay Widerski</h6>
+                        <span class="meta mb-0">Sales Manager</span>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.box -->
+              </div>
+              <!-- /.item-inner -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow">
+                  <blockquote>
+                    <p>"Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus."</p>
+                    <div class="blockquote-details">
+                      <div class="img-blob blob1"><img src="style/images/art/t4.jpg" alt="" /></div>
+                      <div class="info">
+                        <h6 class="mb-0">Nikolas Brooten</h6>
+                        <span class="meta mb-0">Investment Planner</span>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.box -->
+              </div>
+              <!-- /.item-inner -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow">
+                  <blockquote>
+                    <p>"Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus vestibulum."</p>
+                    <div class="blockquote-details">
+                      <div class="img-blob blob1"><img src="style/images/art/t5.jpg" alt="" /></div>
+                      <div class="info">
+                        <h6 class="mb-0">Jackie Sanders</h6>
+                        <span class="meta mb-0">Sales Specialist</span>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.box -->
+              </div>
+              <!-- /.item-inner -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow">
+                  <blockquote>
+                    <p>"Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis."</p>
+                    <div class="blockquote-details">
+                      <div class="img-blob blob1"><img src="style/images/art/t6.jpg" alt="" /></div>
+                      <div class="info">
+                        <h6 class="mb-0">Tina Geller</h6>
+                        <span class="meta mb-0">Financial Analyst</span>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.box -->
+              </div>
+              <!-- /.item-inner -->
+            </div>
+            <!-- /.item -->
+          </div>
+          <!-- /.owl-carousel -->
+        </div>
+        <!-- /.grid-view -->
+        <div class="space160"></div>
+        <div class="row">
+          <div class="col-lg-5 pr-50 pr-md-15">
+            <h2 class="title-color color-gray">Our Pricing</h2>
+            <h3 class="display-3">We offer great prices, premium products and quality service for your business.</h3>
+            <div class="space20"></div>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est.</p>
+          </div>
+          <!--/column -->
+          <div class="space70 d-none d-md-block d-lg-none"></div>
+          <div class="space20 d-md-none"></div>
+          <div class="col-lg-7">
+            <div class="pricing-wrapper">
+              <div class="row no-gutters">
+                <div class="col-md-6 popular">
+                  <div class="pricing panel box bg-white shadow">
+                    <div class="panel-heading">
+                      <div class="prices color-dark">
+                        <div class="price price-show"><span class="price-currency">$</span><span class="price-value">9</span> <span class="price-duration">month</span></div>
+                        <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">99</span> <span class="price-duration">year</span></div>
+                      </div>
+                      <h4 class="panel-title mb-0">Basic Plan</h4>
+                    </div>
+                    <!--/.panel-heading -->
+                    <div class="panel-body">
+                      <table class="table">
+                        <tr>
+                          <td><strong>1</strong> Project </td>
+                        </tr>
+                        <tr>
+                          <td><strong>100K</strong> API Access </td>
+                        </tr>
+                        <tr>
+                          <td><strong>100MB</strong> Storage </td>
+                        </tr>
+                        <tr>
+                          <td> Custom <strong>Cloud</strong> Services </td>
+                        </tr>
+                        <tr>
+                          <td> Weekly <strong>Reports</strong></td>
+                        </tr>
+                        <tr>
+                          <td> 7/24 <strong>Support</strong></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--/.panel-body -->
+                    <div class="panel-footer"> <a href="#" class="btn" role="button">Choose Plan</a></div>
+                  </div>
+                  <!--/.pricing -->
+                </div>
+                <!--/column -->
+                <div class="col-md-6">
+                  <div class="pricing panel box bg-white shadow">
+                    <div class="panel-heading">
+                      <div class="prices color-dark">
+                        <div class="price price-show"><span class="price-currency">$</span><span class="price-value">19</span> <span class="price-duration">month</span></div>
+                        <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">199</span> <span class="price-duration">year</span></div>
+                      </div>
+                      <h4 class="panel-title mb-0">Premium Plan</h4>
+                    </div>
+                    <!--/.panel-heading -->
+                    <div class="panel-body">
+                      <table class="table">
+                        <tr>
+                          <td><strong>5</strong> Projects </td>
+                        </tr>
+                        <tr>
+                          <td><strong>100K</strong> API Access </td>
+                        </tr>
+                        <tr>
+                          <td><strong>200MB</strong> Storage </td>
+                        </tr>
+                        <tr>
+                          <td> Custom <strong>Cloud</strong> Services </td>
+                        </tr>
+                        <tr>
+                          <td> Weekly <strong>Reports</strong></td>
+                        </tr>
+                        <tr>
+                          <td> 7/24 <strong>Support</strong></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--/.panel-body -->
+                    <div class="panel-footer"> <a href="#" class="btn" role="button">Choose Plan</a></div>
+                  </div>
+                  <!--/.pricing -->
+                </div>
+                <!--/column -->
+              </div>
+              <!--/.row -->
+            </div>
+            <!--/.pricing-wrapper -->
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+        <div class="space140"></div>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <figure><img src="#" srcset="style/images/concept/concept12.png 1x, style/images/concept/concept12@2x.png 2x" alt="" /></figure>
+          </div>
+          <!--/column -->
+          <div class="space50 d-none d-md-block d-lg-none"></div>
+          <div class="space10 d-md-none"></div>
+          <div class="col-lg-6 pl-60 pl-md-15">
+            <h2 class="title-color color-gray">Let's Talk</h2>
+            <h3 class="display-3">Let's make something great together. If you got any questions, don't hesitate to get in touch with us.</h3>
+            <div class="space20"></div>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <div class="space10"></div>
+            <a href="#" class="btn btn-default">Contact Us</a>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.wrapper -->
+    <div class="wrapper bg-opacity-default">
+      <div class="container inner">
+        <div class="row text-center">
+          <div class="col-lg-8 offset-lg-2">
+            <h2 class="title-color color-gray">Analyze Now</h2>
+            <h3 class="display-3">Wonder how much faster your website can go?<br class="d-none d-xl-block" /> Easily check your SEO Score now.</h3>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <div class="space30"></div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <form class="fields-white">
+              <div class="input-group">
+                <input type="email" value="" name="EMAIL" class="email form-control mb-0 mr-2 mb-sm-0" placeholder="Email Address" required>
+                <button type="submit" class="btn btn-rounded btn-default mr-0 mb-0 pull-right">Analyze</button>
+              </div>
+            </form>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+      <figure style="margin-bottom:-3px;"><img src="style/images/art/rocket1.png" alt="" /></figure>
+    </div>
+    <!-- /.wrapper -->
+    <footer class="white-wrapper">
+      <div class="container inner">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="widget">
+              <h3 class="widget-title">Popular Posts</h3>
+              <ul class="image-list">
+                <li>
+                  <figure class="rounded"><a href="blog-post.html"><img src="style/images/art/a1.jpg" alt="" /></a></figure>
+                  <div class="post-content">
+                    <h6 class="post-title"> <a href="blog-post.html">Magna Mollis Ultricies</a> </h6>
+                    <div class="meta"><span class="date"><i class="jam jam-clock"></i>12 Nov 2017</span><span class="comments"><i class="jam jam-message-alt"></i><a href="#">4</a></span></div>
+                  </div>
+                </li>
+                <li>
+                  <figure class="rounded"> <a href="blog-post.html"><img src="style/images/art/a2.jpg" alt="" /></a></figure>
+                  <div class="post-content">
+                    <h6 class="post-title"> <a href="blog-post.html">Ornare Nullam Risus</a> </h6>
+                    <div class="meta"><span class="date"><i class="jam jam-clock"></i>12 Nov 2017</span><span class="comments"><i class="jam jam-message-alt"></i><a href="#">4</a></span></div>
+                  </div>
+                </li>
+                <li>
+                  <figure class="rounded"><a href="blog-post.html"><img src="style/images/art/a3.jpg" alt="" /></a></figure>
+                  <div class="post-content">
+                    <h6 class="post-title"> <a href="blog-post.html">Euismod Nullam</a> </h6>
+                    <div class="meta"><span class="date"><i class="jam jam-clock"></i>12 Nov 2017</span><span class="comments"><i class="jam jam-message-alt"></i><a href="#">4</a></span></div>
+                  </div>
+                </li>
+              </ul>
+              <!-- /.image-list -->
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /column -->
+          <div class="col-md-6 col-lg-3">
+            <div class="widget">
+              <h3 class="widget-title">Tags</h3>
+              <ul class="list-unstyled tag-list">
+                <li><a href="#" class="btn btn-s">Still Life</a></li>
+                <li><a href="#" class="btn btn-s">Urban</a></li>
+                <li><a href="#" class="btn btn-s">Nature</a></li>
+                <li><a href="#" class="btn btn-s">Landscape</a></li>
+              </ul>
+            </div>
+            <div class="widget">
+              <h3 class="widget-title">Categories</h3>
+              <ul class="unordered-list column-2">
+                <li><a href="#" class="nocolor">Lifestyle (21)</a></li>
+                <li><a href="#" class="nocolor">Photo (19)</a></li>
+                <li><a href="#" class="nocolor">Journal (16)</a></li>
+                <li><a href="#" class="nocolor">Works (7)</a></li>
+                <li><a href="#" class="nocolor">Still Life (9)</a></li>
+                <li><a href="#" class="nocolor">Travel (17)</a></li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /column -->
+          <div class="col-md-6 col-lg-3">
+            <div class="widget">
+              <h3 class="widget-title">Get in Touch</h3>
+              <address> Moonshine St. 14/05 Light City, London, United Kingdom</address>
+              <a href="mailto:first.last@email.com">info@email.com</a><br /> +00 (123) 456 78 90
+            </div>
+            <!-- /.widget -->
+            <div class="widget">
+              <h3 class="widget-title">Elsewhere</h3>
+              <ul class="social social-mute social-s ml-auto">
+                <li><a href="#"><i class="jam jam-twitter"></i></a></li>
+                <li><a href="#"><i class="jam jam-facebook"></i></a></li>
+                <li><a href="#"><i class="jam jam-instagram"></i></a></li>
+                <li><a href="#"><i class="jam jam-vimeo"></i></a></li>
+                <li><a href="#"><i class="jam jam-youtube"></i></a></li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /column -->
+          <div class="col-md-6 col-lg-3">
+            <div class="widget">
+              <h3 class="widget-title">Learn More</h3>
+              <ul class="list-unstyled">
+                <li><a href="#" class="nocolor">About Us</a></li>
+                <li><a href="#" class="nocolor">Our Story</a></li>
+                <li><a href="#" class="nocolor">Projects</a></li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+            <div class="widget">
+              <h3 class="widget-title">Need Help?</h3>
+              <ul class="list-unstyled">
+                <li><a href="#" class="nocolor">Support</a></li>
+                <li><a href="#" class="nocolor">Get Started</a></li>
+                <li><a href="#" class="nocolor">Contact Us</a></li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /column -->
+        </div>
+        <!--/.row -->
+        <div class="space50"></div>
+        <p class="text-center">© 2020 Snowlake. All rights reserved.</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+  </div>
+  <!-- /.content-wrapper -->
+  <div id="options-nav"></div>
+  <script src="http://themes.iki-bir.com/snowlake/style/js/jquery.min.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/js/popper.min.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/js/bootstrap.min.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/js/plugins.js"></script>
+  <script src="http://themes.iki-bir.com/snowlake/style/js/scripts.js"></script>
+</body>
 </html>

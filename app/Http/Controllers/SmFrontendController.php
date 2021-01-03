@@ -83,42 +83,43 @@ class SmFrontendController extends Controller
     }
 
     public function home(){
+        
         return view('web.index');
     }
 
     public function signupForm(){
-        return view('web.auth.register');
+        // return view('web.auth.register');
+         return view('web.master');
     }
     public function signup(Request $request)
     {
-        // @error
-        // return $request->all();
+        
         $request->validate([
-            'register_name' => 'required|min:3|max:100',
+            'name' => 'required|min:3|max:100',
             'email' => 'required|email|unique:users',
-            'register_password' => 'required|min:6',
-            'password_confirmation' => 'required_with:password|same:password|min:6'
+            'password' => 'required|min:6',
+            'confirm_password' => 'required_with:password|same:confirm_password|min:6'
         ]);
+
         //insert data into user table 
         $register = new User();
         //$customer_register->id = 2054;
-        $register->full_name = $request->register_name;
-        //$customer_register->username = $request->email;
+        $register->full_name = $request->name;
         $register->email = $request->email;
-        $register->password = Hash::make($request->register_password);
-        $register->save();        
+        $register->password = Hash::make($request->password);
+        $register->save(); 
+
         $result = $register->toArray();
+
         if (!empty($result)) {
-            Toastr::success('Operation successful', 'Success');
-            return redirect('signin');
+            return redirect('signin')->with('message-success', "You have successfully registered in our System. Please Login Now");
         } else {
-            Toastr::error('Operation Failed', 'Failed');
-            // return "Hooooo";
             return redirect()->back();
         }
     }
 
     public function signinForm() {
+
         return view('web.auth.login');
     }
     public function signin(Request $request) {

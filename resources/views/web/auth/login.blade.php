@@ -23,6 +23,14 @@
             
             <div class="col-md-6">
                 <!-- Login -->
+                 @if(session()->has('message-success'))
+                    <div class="alert alert-success">
+                        {{ session()->get('message-success') }} 
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                @endif
                 <div class="card">
                     <div class="card__header">
                         <h4>Login to your Account</h4> </div>
