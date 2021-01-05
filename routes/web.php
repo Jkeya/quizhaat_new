@@ -1,7 +1,9 @@
 <?php
 Route::get('index',  'SmFrontendController@home')->name('home');
-Route::get('signup',  'SmFrontendController@signupForm')->name('signup');
-Route::post('signup', 'SmFrontendController@signup')->name('signup');
+
+Route::get('signup',  'SmFrontendController@signup')->name('signup');
+Route::post('signup', 'SmFrontendController@StoreSignupData')->name('signup');
+
 Route::get('signin',  'SmFrontendController@signinForm')->name('signin');
 Route::post('signin',  'SmFrontendController@signin')->name('signin');
 

@@ -54,7 +54,7 @@
                                                         <button class="btn btn-facebook btn-icon btn-block"> <i class="fa fa-facebook"></i> Sign In via Facebook </button>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <button class="btn btn-twitter btn-icon btn-block"> <i class="fa fa-twitter"></i> Sign in via Google </button>
+                                                        <button class="btn btn-twitter btn-icon btn-block"> <i class="fa fa-twitter"></i> Sign in via Twitter </button>
                                                     </div>
                                                 </div>
                                             </form>

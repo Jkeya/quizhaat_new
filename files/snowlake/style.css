@@ -6140,7 +6140,7 @@ footer.inverse-text address {
 }
 @media (min-width: 1200px) {
     .rev_slider_wrapper {
-        min-height: 500px;
+        min-height: 300px;
     }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {}

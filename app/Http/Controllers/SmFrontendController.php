@@ -87,11 +87,10 @@ class SmFrontendController extends Controller
         return view('web.index');
     }
 
-    public function signupForm(){
-        // return view('web.auth.register');
-         return view('web.master');
+    public function signup(){
+        return view('web.auth.signup');
     }
-    public function signup(Request $request)
+    public function StoreSignupData(Request $request)
     {
         
         $request->validate([

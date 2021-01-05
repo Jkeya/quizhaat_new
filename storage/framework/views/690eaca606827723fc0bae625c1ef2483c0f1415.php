@@ -6,7 +6,7 @@
         <li class="nav-item">
           <div class="navbar-hamburger d-lg-none d-xl-none ml-auto"><button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button></div>
         </li>
-        <li class="nav-item d-none d-lg-block pl-0"><a href="#" class="btn btn-default m-0">Register</a></li>
+        <li class="nav-item d-none d-lg-block pl-0"><a href="<?php echo e(route('signup')); ?>" class="btn btn-default m-0">Register</a></li>
       </ul>
       <!-- /.navbar-nav -->
     </div>
@@ -18,61 +18,7 @@
       </div>
       <ul class="navbar-nav mx-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a>
-          <ul class="dropdown-menu mega-menu boxed list-view text-left">
-            <li class="mega-menu-content">
-              <div class="row">
-                <div class="col-lg-3">
-                  <ul class="list-unstyled">
-                    <li><a class="dropdown-item" href="index.html">Digital Startup</a></li>
-                    <li><a class="dropdown-item" href="index2.html">Saas Landing</a></li>
-                    <li><a class="dropdown-item" href="index3.html">SEO Agency</a></li>
-                    <li><a class="dropdown-item" href="index4.html">Modern Business</a></li>
-                    <li><a class="dropdown-item" href="index5.html">Design Agency</a></li>
-                    <li><a class="dropdown-item" href="index6.html">App Presentation</a></li>
-                    <li><a class="dropdown-item" href="index7.html">Creative Landing</a></li>
-                  </ul>
-                </div>
-                <!--/column -->
-                <div class="col-lg-3">
-                  <ul class="list-unstyled">
-                    <li><a class="dropdown-item" href="index8.html">Marketing Startup</a></li>
-                    <li><a class="dropdown-item" href="index9.html">Digital Agency</a></li>
-                    <li><a class="dropdown-item" href="index10.html">Creative Business</a></li>
-                    <li><a class="dropdown-item" href="index11.html">Software Landing</a></li>
-                    <li><a class="dropdown-item" href="index12.html">App Landing</a></li>
-                    <li><a class="dropdown-item" href="index13.html">Creative Agency</a></li>
-                    <li><a class="dropdown-item" href="index14.html">Wedding Photography</a></li>
-                  </ul>
-                </div>
-                <!--/column -->
-                <div class="col-lg-3">
-                  <ul class="list-unstyled">
-                    <li><a class="dropdown-item" href="index15.html">Food Photography</a></li>
-                    <li><a class="dropdown-item" href="index16.html">Creative Onepage</a></li>
-                    <li><a class="dropdown-item" href="index17.html">Marketing Company</a></li>
-                    <li><a class="dropdown-item" href="index18.html">Startup Business</a></li>
-                    <li><a class="dropdown-item" href="index19.html">Creative Resume</a></li>
-                    <li><a class="dropdown-item" href="index20.html">Digital Studio</a></li>
-                    <li><a class="dropdown-item" href="index21.html">Travel Blog</a></li>
-                  </ul>
-                </div>
-                <!--/column -->
-                <div class="col-lg-3">
-                  <ul class="list-unstyled">
-                    <li><a class="dropdown-item" href="index22.html">Minimal Shop</a></li>
-                    <li><a class="dropdown-item" href="index23.html">Minimal Portfolio</a></li>
-                    <li><a class="dropdown-item" href="index24.html">Coming Soon</a></li>
-                    <li><a class="dropdown-item" href="index25.html">Personal Creative</a></li>
-                    <li><a class="dropdown-item" href="index26.html">Minimal Photography</a></li>
-                    <li><a class="dropdown-item" href="index27.html">Maintenance</a></li>
-                  </ul>
-                </div>
-                <!--/column -->
-              </div>
-              <!--/.row -->
-            </li>
-            <!--/.mega-menu-content-->
-          </ul>
+          
           <!--/.dropdown-menu -->
         </li>
         <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">Features</a>
