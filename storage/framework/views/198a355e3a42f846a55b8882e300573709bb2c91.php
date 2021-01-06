@@ -203,29 +203,61 @@
           <!--/column -->
         </div>
         <!--/.row -->
-        <div class="space140"></div>
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <figure><img src="#" srcset="<?php echo e(asset('')); ?>public/web_assets/style/images/concept/concept8.png 1x, <?php echo e(asset('')); ?>public/web_assets/style/images/concept/concept8@2x.png 2x" alt="" /></figure>
+      
+        
+        <!--/.row -->
+
+<div class="space140"></div>
+
+
+ <div class="wrapper gray-wrapper">
+      <div class="container inner">
+        <h2 class="section-title mb-40 text-center">Boxed Counter with Icons</h2>
+        <div class="row counter">
+          <div class="col-md-6 col-lg-3 text-center">
+            <div class="box bg-white shadow">
+              <div class="icon icon-svg mb-20"><img src="style/images/icons/hs-check.png" alt="" /></div>
+              <h3 class="value">7518</h3>
+              <p>Completed Projects</p>
+            </div>
+            <!--/.box -->
           </div>
           <!--/column -->
-          <div class="space20 d-md-none"></div>
-          <div class="space50 d-none d-md-block d-lg-none"></div>
-          <div class="col-lg-6 pl-60 pl-md-15">
-            <h2 class="title-color color-gray">Why Choose Us?</h2>
-            <h3 class="display-3">Why is Search Engine Optimization important for your business?</h3>
-            <div class="space20"></div>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul class="icon-list bullet-default">
-              <li><i class="icofont-verification-check"></i>Aenean eu leo quam ornare.</li>
-              <li><i class="icofont-verification-check"></i>Nullam quis risus eget mollis.</li>
-              <li><i class="icofont-verification-check"></i>Donec elit non mi porta gravida.</li>
-              <li><i class="icofont-verification-check"></i>Fusce dapibus cursus commodo.</li>
-            </ul>
+          <div class="col-md-6 col-lg-3 text-center">
+            <div class="box bg-white shadow">
+              <div class="icon icon-svg mb-20"><img src="style/images/icons/st-handshake.png" alt="" /></div>
+              <h3 class="value">3472</h3>
+              <p>Satisfied Customers</p>
+            </div>
+            <!--/.box -->
+          </div>
+          <!--/column -->
+          <div class="space30 d-none d-md-block d-lg-none"></div>
+          <div class="col-md-6 col-lg-3 text-center">
+            <div class="box bg-white shadow">
+              <div class="icon icon-svg mb-20"><img src="style/images/icons/sm-develop.png" alt="" /></div>
+              <h3 class="value">2184</h3>
+              <p>Expert Employees</p>
+            </div>
+            <!--/.box -->
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-3 text-center">
+            <div class="box bg-white shadow">
+              <div class="icon icon-svg mb-20"><img src="style/images/icons/ms-medal.png" alt="" /></div>
+              <h3 class="value">4523</h3>
+              <p>Awards Won</p>
+            </div>
+            <!--/.box -->
           </div>
           <!--/column -->
         </div>
         <!--/.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+
+
         <div class="space140"></div>
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
@@ -271,28 +303,8 @@
           <!--/column -->
         </div>
         <!--/.row -->
-        <div class="space140"></div>
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <figure><img src="#" srcset="<?php echo e(asset('')); ?>public/web_assets/style/images/concept/concept3.png 1x, <?php echo e(asset('')); ?>public/web_assets/style/images/concept/concept3@2x.png 2x" alt="" /></figure>
-          </div>
-          <!--/column -->
-          <div class="space20 d-md-none"></div>
-          <div class="space50 d-none d-md-block d-lg-none"></div>
-          <div class="col-lg-6 pl-60 pl-md-15 order-lg-2">
-            <h2 class="title-color color-gray">Our Personalized Solutions</h2>
-            <h3 class="display-3">Just sit and relax while we take care of your business needs</h3>
-            <div class="space20"></div>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul class="icon-list bullet-default">
-              <li><i class="icofont-verification-check"></i>Aenean eu leo quam ornare.</li>
-              <li><i class="icofont-verification-check"></i>Nullam quis risus eget mollis.</li>
-              <li><i class="icofont-verification-check"></i>Donec elit non mi porta gravida.</li>
-              <li><i class="icofont-verification-check"></i>Fusce dapibus cursus commodo.</li>
-            </ul>
-          </div>
-          <!--/column -->
-        </div>
+       
+      
         <!--/.row -->
       </div>
       <!-- /.container -->
@@ -300,228 +312,7 @@
     <!-- /.wrapper -->
     <div class="wrapper light-wrapper">
       <div class="container inner">
-        <h2 class="title-color color-gray text-center mb-30">Customer Stories</h2>
-        <h3 class="display-3 text-center">Customer satisfaction is our major goal. <br class="d-none d-lg-block" />See what our customers are saying about us.</h3>
-        <div class="space20"></div>
-        <div class="grid-view">
-          <div class="carousel owl-carousel gap-small" data-margin="0" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1140":{"items": "3"}}'>
-            <div class="item">
-              <div class="item-inner">
-                <div class="box bg-white shadow">
-                  <blockquote>
-                    <p>"Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula."</p>
-                    <div class="blockquote-details">
-                      <div class="img-blob blob1"><img src="<?php echo e(asset('')); ?>public/web_assets/style/images/art/t1.jpg" alt="" /></div>
-                      <div class="info">
-                        <h6 class="mb-0">Connor Gibson</h6>
-                        <span class="meta mb-0">Financial Analyst</span>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.box -->
-              </div>
-              <!-- /.item-inner -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="item-inner">
-                <div class="box bg-white shadow">
-                  <blockquote>
-                    <p>"Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis."</p>
-                    <div class="blockquote-details">
-                      <div class="img-blob blob1"><img src="<?php echo e(asset('')); ?>public/web_assets/style/images/art/t2.jpg" alt="" /></div>
-                      <div class="info">
-                        <h6 class="mb-0">Coriss Ambady</h6>
-                        <span class="meta mb-0">Marketing Specialist</span>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.box -->
-              </div>
-              <!-- /.item-inner -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="item-inner">
-                <div class="box bg-white shadow">
-                  <blockquote>
-                    <p>"Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam venenatis."</p>
-                    <div class="blockquote-details">
-                      <div class="img-blob blob1"><img src="<?php echo e(asset('')); ?>public/web_assets/style/images/art/t3.jpg" alt="" /></div>
-                      <div class="info">
-                        <h6 class="mb-0">Barclay Widerski</h6>
-                        <span class="meta mb-0">Sales Manager</span>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.box -->
-              </div>
-              <!-- /.item-inner -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="item-inner">
-                <div class="box bg-white shadow">
-                  <blockquote>
-                    <p>"Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus."</p>
-                    <div class="blockquote-details">
-                      <div class="img-blob blob1"><img src="<?php echo e(asset('')); ?>public/web_assets/style/images/art/t4.jpg" alt="" /></div>
-                      <div class="info">
-                        <h6 class="mb-0">Nikolas Brooten</h6>
-                        <span class="meta mb-0">Investment Planner</span>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.box -->
-              </div>
-              <!-- /.item-inner -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="item-inner">
-                <div class="box bg-white shadow">
-                  <blockquote>
-                    <p>"Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus vestibulum."</p>
-                    <div class="blockquote-details">
-                      <div class="img-blob blob1"><img src="<?php echo e(asset('')); ?>public/web_assets/style/images/art/t5.jpg" alt="" /></div>
-                      <div class="info">
-                        <h6 class="mb-0">Jackie Sanders</h6>
-                        <span class="meta mb-0">Sales Specialist</span>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.box -->
-              </div>
-              <!-- /.item-inner -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="item-inner">
-                <div class="box bg-white shadow">
-                  <blockquote>
-                    <p>"Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis."</p>
-                    <div class="blockquote-details">
-                      <div class="img-blob blob1"><img src="<?php echo e(asset('')); ?>public/web_assets/style/images/art/t6.jpg" alt="" /></div>
-                      <div class="info">
-                        <h6 class="mb-0">Tina Geller</h6>
-                        <span class="meta mb-0">Financial Analyst</span>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.box -->
-              </div>
-              <!-- /.item-inner -->
-            </div>
-            <!-- /.item -->
-          </div>
-          <!-- /.owl-carousel -->
-        </div>
-        <!-- /.grid-view -->
-        <div class="space160"></div>
-        <div class="row">
-          <div class="col-lg-5 pr-50 pr-md-15">
-            <h2 class="title-color color-gray">Our Pricing</h2>
-            <h3 class="display-3">We offer great prices, premium products and quality service for your business.</h3>
-            <div class="space20"></div>
-            <p>Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est.</p>
-          </div>
-          <!--/column -->
-          <div class="space70 d-none d-md-block d-lg-none"></div>
-          <div class="space20 d-md-none"></div>
-          <div class="col-lg-7">
-            <div class="pricing-wrapper">
-              <div class="row no-gutters">
-                <div class="col-md-6 popular">
-                  <div class="pricing panel box bg-white shadow">
-                    <div class="panel-heading">
-                      <div class="prices color-dark">
-                        <div class="price price-show"><span class="price-currency">$</span><span class="price-value">9</span> <span class="price-duration">month</span></div>
-                        <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">99</span> <span class="price-duration">year</span></div>
-                      </div>
-                      <h4 class="panel-title mb-0">Basic Plan</h4>
-                    </div>
-                    <!--/.panel-heading -->
-                    <div class="panel-body">
-                      <table class="table">
-                        <tr>
-                          <td><strong>1</strong> Project </td>
-                        </tr>
-                        <tr>
-                          <td><strong>100K</strong> API Access </td>
-                        </tr>
-                        <tr>
-                          <td><strong>100MB</strong> Storage </td>
-                        </tr>
-                        <tr>
-                          <td> Custom <strong>Cloud</strong> Services </td>
-                        </tr>
-                        <tr>
-                          <td> Weekly <strong>Reports</strong></td>
-                        </tr>
-                        <tr>
-                          <td> 7/24 <strong>Support</strong></td>
-                        </tr>
-                      </table>
-                    </div>
-                    <!--/.panel-body -->
-                    <div class="panel-footer"> <a href="#" class="btn" role="button">Choose Plan</a></div>
-                  </div>
-                  <!--/.pricing -->
-                </div>
-                <!--/column -->
-                <div class="col-md-6">
-                  <div class="pricing panel box bg-white shadow">
-                    <div class="panel-heading">
-                      <div class="prices color-dark">
-                        <div class="price price-show"><span class="price-currency">$</span><span class="price-value">19</span> <span class="price-duration">month</span></div>
-                        <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">199</span> <span class="price-duration">year</span></div>
-                      </div>
-                      <h4 class="panel-title mb-0">Premium Plan</h4>
-                    </div>
-                    <!--/.panel-heading -->
-                    <div class="panel-body">
-                      <table class="table">
-                        <tr>
-                          <td><strong>5</strong> Projects </td>
-                        </tr>
-                        <tr>
-                          <td><strong>100K</strong> API Access </td>
-                        </tr>
-                        <tr>
-                          <td><strong>200MB</strong> Storage </td>
-                        </tr>
-                        <tr>
-                          <td> Custom <strong>Cloud</strong> Services </td>
-                        </tr>
-                        <tr>
-                          <td> Weekly <strong>Reports</strong></td>
-                        </tr>
-                        <tr>
-                          <td> 7/24 <strong>Support</strong></td>
-                        </tr>
-                      </table>
-                    </div>
-                    <!--/.panel-body -->
-                    <div class="panel-footer"> <a href="#" class="btn" role="button">Choose Plan</a></div>
-                  </div>
-                  <!--/.pricing -->
-                </div>
-                <!--/column -->
-              </div>
-              <!--/.row -->
-            </div>
-            <!--/.pricing-wrapper -->
-          </div>
-          <!--/column -->
-        </div>
-        <!--/.row -->
-        <div class="space140"></div>
+
         <div class="row align-items-center">
           <div class="col-lg-6">
             <figure><img src="#" srcset="<?php echo e(asset('')); ?>public/web_assets/style/images/concept/concept12.png 1x, <?php echo e(asset('')); ?>public/web_assets/style/images/concept/concept12@2x.png 2x" alt="" /></figure>
@@ -548,8 +339,8 @@
       <div class="container inner">
         <div class="row text-center">
           <div class="col-lg-8 offset-lg-2">
-            <h2 class="title-color color-gray">Analyze Now</h2>
-            <h3 class="display-3">Wonder how much faster your website can go?<br class="d-none d-xl-block" /> Easily check your SEO Score now.</h3>
+            <h2 class="title-color color-gray">Subscribe Here </h2>
+            <h3 class="display-3">For Our lastest updates, please subscribe Here</h3>
           </div>
           <!-- /column -->
         </div>
@@ -560,7 +351,7 @@
             <form class="fields-white">
               <div class="input-group">
                 <input type="email" value="" name="EMAIL" class="email form-control mb-0 mr-2 mb-sm-0" placeholder="Email Address" required>
-                <button type="submit" class="btn btn-rounded btn-default mr-0 mb-0 pull-right">Analyze</button>
+                <button type="submit" class="btn btn-rounded btn-default mr-0 mb-0 pull-right">Subscribe</button>
               </div>
             </form>
           </div>
