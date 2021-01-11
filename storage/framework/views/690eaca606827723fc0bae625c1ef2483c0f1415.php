@@ -11,34 +11,39 @@
       <!-- /.navbar-nav -->
     </div>
     <!-- /.navbar-other -->
-    <div class="navbar-collapse offcanvas-nav">
+    <div  class="navbar-collapse offcanvas-nav">
       <div class="offcanvas-header d-lg-none d-xl-none">
-        <a href="index.html"><img src="#" srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="" /></a>
+        <a href="index.html"><img src="#" srcset="<?php echo e(asset('')); ?>public/web_assets/style/images/logo-light.png 1x, <?php echo e(asset('')); ?>public/web_assets/style/images/logo-light@2x.png 2x" alt="" /></a>
         <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
       </div>
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link" href="<?php echo e(route('home')); ?>">হোম</a>
+      <ul  class="navbar-nav mx-auto">
+        <li class="nav-item"><a  class="nav-link" href="<?php echo e(route('home')); ?>">হোম</a>
           
           <!--/.dropdown-menu -->
         </li>
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">About Us</a>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">আমাদের সম্পর্কে
+        </a>
         </li>
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">Leader Board</a>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">লিডার বোর্ড
+        </a>
       
         </li>
-        <li class="nav-item"><a class="nav-link" href="#!">All Quizes</a>
+        <li class="nav-item"><a class="nav-link" href="#!">সকল কুইজ</a>
           
           
         </li>
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">Share with Friends</a>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">বন্ধুদের সাথে শেয়ার করুন</a>
       
         </li>
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">Others</a>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#!">অন্যান্য
+        </a>
           <ul class="dropdown-menu">
             
-            <li><a class="dropdown-item" href="blog2.html">FAQ</a></li>
-            <li><a class="dropdown-item" href="blog3.html">Help</a></li>
-            <li><a class="dropdown-item" href="blog4.html">Contact</a></li>
+            <li><a class="dropdown-item" href="blog2.html">আপনাদের জিজ্ঞাসা
+            </a></li>
+            <li><a class="dropdown-item" href="blog3.html">সাহায্য
+            </a></li>
+            <li><a class="dropdown-item" href="blog4.html">যোগাযোগ করুন</a></li>
            
             
           </ul>

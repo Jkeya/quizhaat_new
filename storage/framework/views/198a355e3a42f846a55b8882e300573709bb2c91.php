@@ -9,7 +9,7 @@
     <!-- /.navbar -->
     <div class="offcanvas-info inverse-text">
       <button class="plain offcanvas-close offcanvas-info-close"><i class="jam jam-close"></i></button>
-      <a href="index.html"><img src="#" srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="" /></a>
+      <a href="index.html"><img src="#" srcset="<?php echo e(asset('')); ?>public/web_assets/style/images/logo-light.png 1x, <?php echo e(asset('')); ?>public/web_assets/style/images/logo-light@2x.png 2x" alt="" /></a>
       <div class="space30"></div>
       <p>Snowlake is a multi-concept and powerful site template contains rich layouts with possibility of unlimited combinations & beautiful elements.</p>
       <div class="space20"></div>
@@ -216,7 +216,7 @@
         <div class="row counter">
           <div class="col-md-6 col-lg-3 text-center">
             <div class="box bg-white shadow">
-              <div class="icon icon-svg mb-20"><img src="style/images/icons/hs-check.png" alt="" /></div>
+              <div class="icon icon-svg mb-20"><img src="<?php echo e(asset('')); ?>public/web_assets/style/images/icons/hs-check.png" alt="" /></div>
               <h3 class="value">7518</h3>
               <p>Completed Projects</p>
             </div>
@@ -225,7 +225,7 @@
           <!--/column -->
           <div class="col-md-6 col-lg-3 text-center">
             <div class="box bg-white shadow">
-              <div class="icon icon-svg mb-20"><img src="style/images/icons/st-handshake.png" alt="" /></div>
+              <div class="icon icon-svg mb-20"><img src="<?php echo e(asset('')); ?>public/web_assets/style/images/icons/st-handshake.png" alt="" /></div>
               <h3 class="value">3472</h3>
               <p>Satisfied Customers</p>
             </div>
@@ -235,7 +235,7 @@
           <div class="space30 d-none d-md-block d-lg-none"></div>
           <div class="col-md-6 col-lg-3 text-center">
             <div class="box bg-white shadow">
-              <div class="icon icon-svg mb-20"><img src="style/images/icons/sm-develop.png" alt="" /></div>
+              <div class="icon icon-svg mb-20"><img src="<?php echo e(asset('')); ?>public/web_assets/style/images/icons/sm-develop.png" alt="" /></div>
               <h3 class="value">2184</h3>
               <p>Expert Employees</p>
             </div>
@@ -244,7 +244,7 @@
           <!--/column -->
           <div class="col-md-6 col-lg-3 text-center">
             <div class="box bg-white shadow">
-              <div class="icon icon-svg mb-20"><img src="style/images/icons/ms-medal.png" alt="" /></div>
+              <div class="icon icon-svg mb-20"><img src="<?php echo e(asset('')); ?>public/web_assets/style/images/icons/ms-medal.png" alt="" /></div>
               <h3 class="value">4523</h3>
               <p>Awards Won</p>
             </div>
@@ -340,7 +340,7 @@
         <div class="row text-center">
           <div class="col-lg-8 offset-lg-2">
             <h2 class="title-color color-gray">Subscribe Here </h2>
-            <h3 class="display-3">For Our lastest updates, please subscribe Here</h3>
+            <h3 class="display-3">আমাদের সর্বশেষ আপডেটের জন্য,এখানে সাবস্ক্রাইব করুন</h3>
           </div>
           <!-- /column -->
         </div>

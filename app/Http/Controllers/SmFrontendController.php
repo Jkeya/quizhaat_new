@@ -97,12 +97,12 @@ class SmFrontendController extends Controller
             'name' => 'required|min:3|max:100',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6',
-            'confirm_password' => 'required_with:password|same:confirm_password|min:6'
+            'confirm_password' => 'required|min:6|same:password'
         ]);
 
-        //insert data into user table 
+         
         $register = new User();
-        //$customer_register->id = 2054;
+        
         $register->full_name = $request->name;
         $register->email = $request->email;
         $register->password = Hash::make($request->password);
@@ -125,15 +125,15 @@ class SmFrontendController extends Controller
         // return view('web.auth.login');
         $request->validate([
             'email' => 'required|email',
-            'password' => 'required|min:6',
+            'password' => 'required',
         ]);
         $credentials = $request->except(['_token']);
         if (auth()->attempt($credentials)) {
-            Toastr::success('Operation successful', 'Success');            
+                        
             return redirect()->route('home');
         } else {
-            // $session->flash('message', 'error');
-            return redirect()->back();
+            
+            return redirect('signin')->with('message-failed', "Invalid Email or password");
         }
     }
 

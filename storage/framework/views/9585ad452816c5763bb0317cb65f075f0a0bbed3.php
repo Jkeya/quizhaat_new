@@ -53,7 +53,7 @@
       </div>
       <!-- /.rev_slider_wrapper -->
     </div>
-
+      
     <div class="wrapper light-wrapper">
       <div class="container" style="margin-top: 30px; margin-bottom: 30px;">
         <div class="row">
@@ -61,7 +61,8 @@
       <!--       <h2 class="section-title text-center">Drop Us a Line</h2>
             <p class="text-center">Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat. Praesent commodo cursus.</p> -->
             <div class="space30"></div>
-            <form id="contact-form" method="post" action="contact/contact.php">
+            <form id="contact-form" method="post" action="<?php echo e(route('signup')); ?>">
+              <?php echo csrf_field(); ?>
               <div class="messages"></div>
 
               <div class="row">
@@ -71,7 +72,11 @@
                 <div class="form-row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name *" required="required" data-error="First Name is required.">
+                      <input id="name" type="text" name="name" class="form-control" placeholder="Full Name *" required="required" data-error="Full Name is required.">
+                      <?php if($errors->has('name')): ?>
+                      
+                      <div style="color: red" class="error"><?php echo e($errors->first('name')); ?></div>
+                      <?php endif; ?>
                       <!-- <div class="help-block with-errors"></div> -->
                     </div>
                   </div>
@@ -79,7 +84,12 @@
                 <div class="form-row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Email *" required="required" data-error="Valid email is required.">
+                      <input id="email" type="email" name="email" class="form-control" placeholder="Email *" required="required" data-error="Email is required.">
+                      
+                      <?php if($errors->has('email')): ?>
+                      
+                      <div style="color: red" class="error"><?php echo e($errors->first('email')); ?></div>
+                      <?php endif; ?>
                       <!-- <div class="help-block with-errors"></div> -->
                     </div>
                   </div>
@@ -87,7 +97,11 @@
                 <div class="form-row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Password *" required="required" data-error="Valid email is required.">
+                      <input id="password" type="password" name="password" class="form-control" placeholder="Password *" required="required" data-error="Password is required.">
+                      <?php if($errors->has('password')): ?>
+                      
+                      <div style="color: red" class="error"><?php echo e($errors->first('password')); ?></div>
+                      <?php endif; ?>
                       <!-- <div class="help-block with-errors"></div> -->
                     </div>
                   </div>
@@ -95,7 +109,11 @@
                 <div class="form-row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Confirm Password *" required="required" data-error="Valid email is required.">
+                      <input id="confirm_password" type="password" name="confirm_password" class="form-control" placeholder="Confirm Password *" required="required" data-error="Confirm-Password is required.">
+                      <?php if($errors->has('confirm_password')): ?>
+                      
+                      <div style="color: red" class="error"><?php echo e($errors->first('confirm_password')); ?></div>
+                      <?php endif; ?>
                       <!-- <div class="help-block with-errors"></div> -->
                     </div>
                   </div>
@@ -109,7 +127,7 @@
                     </div>
                   </div> -->
                   <div class="col-md-12 text-center" style="margin-top: 20px;">
-                    <input type="submit" class="btn btn-send" value="Register">
+                  <input type="submit" class="btn btn send" value="Register">
                   </div>
                 </div>
                 <div class="form-row">
