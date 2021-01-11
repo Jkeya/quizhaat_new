@@ -130,7 +130,7 @@ class SmFrontendController extends Controller
         $credentials = $request->except(['_token']);
         if (auth()->attempt($credentials)) {
                         
-            return redirect()->route('home');
+            return redirect()->route('dashboard');
         } else {
             
             return redirect('signin')->with('message-failed', "Invalid Email or password");

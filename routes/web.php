@@ -96,7 +96,7 @@ Route::get('ajax-get-login-access', 'SmAuthController@getLoginAccess');
 // Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
 // Route::post('register', 'Auth\RegisterController@register');
 
-Route::get('/after-login', 'HomeController@dashboard');
+Route::get('/after-login', 'HomeController@dashboard')->name('dashboard');
 
 Route::get('/dashboard', 'HomeController@dashboard');
 
